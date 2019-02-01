@@ -3,9 +3,10 @@
 }
 
 body {
-    margin: 0 auto;
-    width: 90%;
+    background-color: #F6F6F6;
     color: #121213;
+    margin: 0 auto;
+    width: 100%;
 }
 
 html {
@@ -20,74 +21,70 @@ p {
 
 a {
     text-decoration: none;
+    color: #121213;
 }
+
 /*GLOBAL COLORS*/
 :root {
     --purple: #76649E;
     --link-color: #50796B;
 }
 
-/*Slideshow*/
-.slideshow-container {
-    position: relative;
-    margin: auto;
+/* Nav */
+nav ul {
+    list-style-type: none;
+    overflow: hidden;
 }
 
-/* Hide the images by default */
-.mySlides {
-    display: none;
-  }
+nav li {
+    display: inline;
+}
 
-/* Next & previous buttons */
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -2.2rem;
-    padding: 1.6rem;
-    color: #121213;
-    font-weight: bold;
-    font-size: 1.8rem;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
+nav li a:hover {
+    color: var(--link-color);
 
-.next {
+}
+
+nav {
+    font-size: 1.6rem;
+    height: 85px;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.first-half {
+    float: left;
+}
+
+.second-half {
+    display: relative;
+    float: right;
+    top: 0;
     right: 0;
-    border-radius: .3rem 0 0 .3rem;
-  }
-  
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  
-  .active, .dot:hover {
-    background-color: #717171;
-  }
+}
 
 /*Homepage Colors and Structure*/
 section.hero {
-    background-color: #F6F6F6;
+    /* height: 100vh; */
     padding: 5% 10%;
 }
 
 section.prephub {
     background-color: #F2F5FA;
-}*/
+    text-align: center;
+}
+
+.prephub-screenshot {
+    height: 200px;
+}
+
 
 /* Homepage Typography*/
 .hero h1 {
-    font-size: 7.2rem;
-    line-height: 115%;
+    font-size: 4.2rem;
+    line-height: 125%;
     font-family: 'Lora', 'Times New Roman', serif;
 }
 
@@ -96,7 +93,7 @@ section.prephub {
 }
 
 .hero p {
-    font-size: 3.2rem;
+    font-size: 2.4rem;
     padding: 5% 0;
 }
 
@@ -105,14 +102,38 @@ section.prephub {
     font-weight: 700;
 }
 
+.prephub h1 {
+    font-size: 3.2rem;
+    padding-top: 6rem;
+}
+
+.prephub h2 {
+    font-family: "Lora", "Times New Roman", serif;
+    font-size: 3.2rem;
+    padding-top: 1.8rem;
+}
+
+.prephub p {
+    font-size: 2rem;
+    padding-top: 1.8rem;
+}
+
+
+
 /*For desktop*/
-@media screen and (min-width: 50rem) {
-    body {
-        /*background-color:blue;*/
-        margin: 0 auto;
-        width: 100%;
-        /*display: grid;
-        grid-template-columns: repeat(18, 1fr);
-        grid-column: 4 / span 12;*/
+@media screen and (min-width: 32rem) {
+
+    .hero h1 {
+        font-size: 7.2rem;
+        line-height: 120%;
     }
+
+    .hero p {
+        font-size: 3.2rem;
+    }
+
+    .prephub-screenshot {
+        height: 400px;
+    }
+
 }
