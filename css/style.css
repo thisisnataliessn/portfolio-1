@@ -3,7 +3,7 @@
 }
 
 body {
-
+    background-color: #F6F6F6;
     color: #121213;
     margin: 0 auto;
     width: 100%;
@@ -24,6 +24,13 @@ a {
     color: #121213;
 }
 
+hr{
+    border:none;
+    height: 3px;
+    width: 24rem;
+    background-color: var(--purple);
+   }
+
 /*GLOBAL COLORS*/
 :root {
     --purple: #76649E;
@@ -38,6 +45,7 @@ nav ul {
 
 nav li {
     display: inline;
+    padding: 16px;
 }
 
 nav li a:hover {
@@ -45,82 +53,75 @@ nav li a:hover {
 }
 
 nav {
+    background-color: #f6f6f6;
     border-bottom: 3px solid var(--purple);
     font-size: 1.6rem;
-     position: sticky;
+    opacity: 1;
+    position: sticky;
     top: 0;
     z-index: 5;
 }
 
+.name {
+    visibility: hidden;
+    position: absolute;
+    top: 30px;
+    left: 100px;
+}
+
+.nav-links {
+    position: absolute;
+    top: 30px;
+    right: 16px;
+}
 .logo {
-    height: auto;
-    width: 10px;
-    z-index: 100;
+    padding-left: 16px;
 }
 
-/*Footer*/
-footer {
-    font-size: 25px;
-    text-align: right;
-}
-
-/*CSS Grid for mobile*/
- .container {
+/*CSS Grid + layout - mobile first*/
+.container {
     display: grid;
     grid-template-rows: 85px auto 65px;
     grid-template-columns: 16px repeat(6, 1fr) 16px;
-    grid-gap: 16px;
+    grid-column-gap: 16px;
 }
 
 nav {
     grid-row: 1 / span 1;
-    grid-column: 2 /span 6;
-    display: grid;
-    grid-template-columns: 16px repeat(6, 1fr) 16px;
-}
+    grid-column: 1 /span 8;
 
-.first-half {
-    grid-column: 1 / span 2;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.second-half {
-    grid-column: 6 / span 2;
 }
 
 main {
     grid-row: 2 / span 1;
     grid-column: 1 / span 8;
     display: grid;
-    grid-template-columns: 16px repeat(6, 1fr) 16px;
-    grid-template-rows: repeat(2, 1fr);
 }
 
 .hero {
     grid-column: 1 /span 8;
     grid-row: 1 / span 1;
+    display: grid;
+    grid-template-columns: 16px 1fr 16px;
+    grid-template-rows: 1fr 1fr;
+}
+
+.hero h1 {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+}
+
+.hero p {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
 }
 
 .prephub {
     grid-row: 2 / span 1;
     grid-column: 1 /span 8;
-}
-
-footer {
-    grid-row: 3/span 1;
-    grid-column: 1 / span 8;
-  }
-
-
-
-/*Homepage Colors and Structure*/
-.hero {
-    background-color: #F6F6F6;
-}
-
-section.prephub {
-    background-color: #F2F5FA;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 80px;
     text-align: center;
 }
 
@@ -128,16 +129,29 @@ section.prephub {
     height: 200px;
 }
 
-footer li{
-    display: inline;
+footer {
+    grid-row: 3/span 1;
+    grid-column: 1 / span 8;
+    font-size: 25px;
+    text-align: right;
+    padding-right: 16px
+}
+footer ul{
+    position:relative;
+    top:30px;
 }
 
+footer li {
+    display: inline;
+    padding: 8px;
+}
 
 /* Homepage Typography*/
 .hero h1 {
     font-size: 4.2rem;
     line-height: 125%;
     font-family: 'Lora', 'Times New Roman', serif;
+    padding-top: 80px;
 }
 
 .hero h1 span {
@@ -146,6 +160,7 @@ footer li{
 
 .hero p {
     font-size: 2.4rem;
+    padding-top: 8rem;
 }
 
 .hero a {
@@ -155,12 +170,15 @@ footer li{
 
 .prephub h1 {
     font-size: 3.2rem;
-    padding-top: 6rem;
+    line-height: 125%;
+    padding-top: 4.2rem;
 }
+
 
 .prephub h2 {
     font-family: "Lora", "Times New Roman", serif;
     font-size: 3.2rem;
+    line-height: 125%;
     padding-top: 1.8rem;
 }
 
@@ -169,71 +187,110 @@ footer li{
     padding-top: 1.8rem;
 }
 
-
-
-@media screen and (min-width: 62rem) {
-    /*CSS Grid for larger than mobile*/
+/*tablet*/
+@media screen and (min-width:575px) {
     .container {
         display: grid;
-        grid-template-rows: 85px auto 65px;
-        grid-template-columns: 72px repeat(7, 1fr) 72px;
+        grid-template-columns: 60px repeat(6, 1fr) 60px;
+        grid-column-gap: 72px;
     }
 
     nav {
-        grid-row: 1 / span 1;
-        grid-column: 1 /span 9;
         display: grid;
-        grid-template-columns: 72px repeat(7, 1fr) 72px;
+        grid-template-columns: 60px repeat(6, 1fr) 60px;
     }
 
-    .first-half {
-        grid-column: 2 / span 2;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+    .logo {
+        padding-left: 60px;
     }
 
-    .second-half {
-        grid-column: 8 / span 2;
+    .name {
+        visibility: visible;
+        left: 142px;
     }
 
-    main {
-        grid-row: 2 / span 1;
-        grid-column: 1 / span 9;
-        display: grid;
-        grid-template-columns: 72px repeat(7, 1fr) 72px;
-        grid-template-rows: repeat(2, 1fr);
+    .nav-links {
+        right: 60px;
     }
 
     .hero {
-        grid-column: 1 /span 9;
-        grid-row: 1 / span 1;
+        display: grid;
+        grid-template-columns: 60px 1fr 60px;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .hero h1 {
+        line-height: 120%;
     }
 
     .prephub {
-        grid-row: 2 / span 1;
-        grid-column: 1 /span 9;
+        padding-left: 60px;
+        padding-right: 60px;
+
     }
 
     footer {
         grid-row: 3/span 1;
-        grid-column: 1 / span 9;
-      
+        grid-column: 1 / span 8;
+        font-size: 25px;
+        text-align: right;
+        padding-right: 60px
     }
-/*Typography for larger than mobile*/
+
+}
+
+/*desktop*/
+@media screen and (min-width: 991px) {
+
+
+    .container {
+        display: grid;
+        grid-template-columns: 72px repeat(6, 1fr) 72px;
+        grid-column-gap: 72px;
+    }
+
+    nav {
+        display: grid;
+        grid-template-columns: 72px repeat(6, 1fr) 72px;
+    }
+
+    .logo {
+        padding-left: 72px;
+    }
+
+    .name {
+        left: 160px;
+    }
+
+    .nav-links {
+        right: 72px;
+    }
+
+    .hero {
+        display: grid;
+        grid-template-columns: 72px 1fr 72px;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    footer {
+        grid-row: 3/span 1;
+        grid-column: 1 / span 8;
+        font-size: 25px;
+        text-align: right;
+        padding-right: 72px
+    }
+
+    /*Typography for larger than mobile*/
     .hero h1 {
         font-size: 7.2rem;
         line-height: 120%;
-        padding: 80px 72px 0px 72px;
     }
 
     .hero p {
         font-size: 3.2rem;
-        padding: 80px 72px 0px 72px;
     }
 
     .prephub-screenshot {
         height: 400px;
     }
-
-
 }
