@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: #F6F6F6;
+
     color: #121213;
     margin: 0 auto;
     width: 100%;
@@ -42,33 +42,81 @@ nav li {
 
 nav li a:hover {
     color: var(--link-color);
-
 }
 
 nav {
+    border-bottom: 3px solid var(--purple);
     font-size: 1.6rem;
-    height: 85px;
-    padding: 20px;
-    position: fixed;
+     position: sticky;
     top: 0;
+    z-index: 5;
+}
+
+.logo {
+    height: auto;
+    width: 10px;
     z-index: 100;
 }
 
+/*Footer*/
+footer {
+    font-size: 25px;
+    text-align: right;
+}
+
+/*CSS Grid for mobile*/
+ .container {
+    display: grid;
+    grid-template-rows: 85px auto 65px;
+    grid-template-columns: 16px repeat(6, 1fr) 16px;
+    grid-gap: 16px;
+}
+
+nav {
+    grid-row: 1 / span 1;
+    grid-column: 2 /span 6;
+    display: grid;
+    grid-template-columns: 16px repeat(6, 1fr) 16px;
+}
+
 .first-half {
-    float: left;
+    grid-column: 1 / span 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .second-half {
-    display: relative;
-    float: right;
-    top: 0;
-    right: 0;
+    grid-column: 6 / span 2;
 }
 
+main {
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 8;
+    display: grid;
+    grid-template-columns: 16px repeat(6, 1fr) 16px;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.hero {
+    grid-column: 1 /span 8;
+    grid-row: 1 / span 1;
+}
+
+.prephub {
+    grid-row: 2 / span 1;
+    grid-column: 1 /span 8;
+}
+
+footer {
+    grid-row: 3/span 1;
+    grid-column: 1 / span 8;
+  }
+
+
+
 /*Homepage Colors and Structure*/
-section.hero {
-    /* height: 100vh; */
-    padding: 5% 10%;
+.hero {
+    background-color: #F6F6F6;
 }
 
 section.prephub {
@@ -78,6 +126,10 @@ section.prephub {
 
 .prephub-screenshot {
     height: 200px;
+}
+
+footer li{
+    display: inline;
 }
 
 
@@ -94,7 +146,6 @@ section.prephub {
 
 .hero p {
     font-size: 2.4rem;
-    padding: 5% 0;
 }
 
 .hero a {
@@ -120,20 +171,69 @@ section.prephub {
 
 
 
-/*For desktop*/
-@media screen and (min-width: 32rem) {
+@media screen and (min-width: 62rem) {
+    /*CSS Grid for larger than mobile*/
+    .container {
+        display: grid;
+        grid-template-rows: 85px auto 65px;
+        grid-template-columns: 72px repeat(7, 1fr) 72px;
+    }
 
+    nav {
+        grid-row: 1 / span 1;
+        grid-column: 1 /span 9;
+        display: grid;
+        grid-template-columns: 72px repeat(7, 1fr) 72px;
+    }
+
+    .first-half {
+        grid-column: 2 / span 2;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .second-half {
+        grid-column: 8 / span 2;
+    }
+
+    main {
+        grid-row: 2 / span 1;
+        grid-column: 1 / span 9;
+        display: grid;
+        grid-template-columns: 72px repeat(7, 1fr) 72px;
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .hero {
+        grid-column: 1 /span 9;
+        grid-row: 1 / span 1;
+    }
+
+    .prephub {
+        grid-row: 2 / span 1;
+        grid-column: 1 /span 9;
+    }
+
+    footer {
+        grid-row: 3/span 1;
+        grid-column: 1 / span 9;
+      
+    }
+/*Typography for larger than mobile*/
     .hero h1 {
         font-size: 7.2rem;
         line-height: 120%;
+        padding: 80px 72px 0px 72px;
     }
 
     .hero p {
         font-size: 3.2rem;
+        padding: 80px 72px 0px 72px;
     }
 
     .prephub-screenshot {
         height: 400px;
     }
+
 
 }

@@ -4,3 +4,10 @@ $(function(){
         'background-color': backgroundColor
     })
 })
+
+$(function(){
+    let backgroundColor = $('section.hero').css('background-color');
+    $('nav').css({
+        'background-color': backgroundColor
+    })
+})
