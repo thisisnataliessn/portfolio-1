@@ -6,12 +6,19 @@
 :root {
     --purple: #76649E;
     --link-color: #50796B;
+    --light-green: #D4E3DE;
+    --gray-white: #f6f6f6;
+    --light-orange: #F6E5D9;
 }
 
 body {
-    background-color: #F6F6F6;
+    background-color: var(--gray-white);
     color: #121213;
-     width: 100%;
+    width: 100%;
+}
+
+body .case-study {
+    background-color: #ffffff;
 }
 
 html {
@@ -30,20 +37,32 @@ a {
     text-decoration: none;
 }
 
-
+/* Need to make these open in new tab when they go external */
+.button {
+    background-color: #ffffff;
+    border: 3px solid var(--link-color);
+    border-radius: 30px;
+    color: var(--link-color);
+    font-size: 1.8rem;
+    letter-spacing: .05rem;
+    padding: 1.5rem 3rem;
+    text-decoration: none;
+}
 
 hr {
     border: none;
     height: 3px;
     width: 24rem;
     background-color: var(--purple);
+    text-align: left;
+    margin: 0 auto 0 0
 }
 
 /*CSS Grid + layout - mobile first*/
 .container {
     display: grid;
     grid-template-rows: 85px auto 65px;
-    grid-template-columns: minmax(16px,auto) repeat(6, minmax(30px,132px)) minmax(16px,auto);
+    grid-template-columns: minmax(16px, auto) repeat(6, minmax(30px, 132px)) minmax(16px, auto);
     grid-column-gap: 16px;
 }
 
@@ -56,7 +75,6 @@ nav {
 main {
     grid-row: 2 / span 1;
     grid-column: 1 / span 8;
-    display: grid;
 }
 
 .hero {
@@ -65,7 +83,7 @@ main {
     padding-left: 16px;
     padding-right: 16px;
     display: grid;
-    grid-template-columns: minmax(16px,auto) fit-content(1000px) minmax(16px,auto);
+    grid-template-columns: minmax(16px, auto) fit-content(1000px) minmax(16px, auto);
     grid-template-rows: repeat(2, auto);
 }
 
@@ -91,12 +109,19 @@ main {
 
 .prephub-screenshot {
     padding-top: 42px;
-    height: 200px;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+}
+
+.prephub hr {
+    text-align: center;
+    margin: .8rem auto;
 }
 
 /* Nav */
 nav {
-    background-color: #f6f6f6;
+    background-color: var(--gray-white);
     border-bottom: 3px solid var(--purple);
     font-size: 1.6rem;
     position: sticky;
@@ -145,6 +170,7 @@ footer {
     grid-row: 3/span 1;
     grid-column: 1 / span 8;
     font-size: 25px;
+    margin-top: 3.2rem;
     text-align: right;
     padding-right: 16px
 }
@@ -200,35 +226,213 @@ footer a {
 }
 
 /*PrepHub case study*/
-.intro {
+.case-study h2 {
+    font-size: 2.5rem;
+    font-family: "Lora", "Times New Roman", serif;
+    line-height: 2.8rem;
+    text-transform: uppercase;
+}
+
+.case-study ul {
+    list-style-type: disc;
+    list-style-position: inside;
+    padding-top: 1.6rem;
+}
+
+.case-study li,
+.case-study p {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+}
+
+.headline {
+    grid-column: 2 / 8;
+    margin-top: 2.4rem;
+}
+
+.headline h2 {
+    line-height: 125%;
+    max-width: 20rem;
+    padding-bottom: 1.6rem;
+    padding-top: 1.6rem;
+
+}
+
+.headline p {
+    padding-top: 1.6rem;
+}
+
+.main-topics {
     display: grid;
-    grid-template-columns: 16px repeat(6, 1fr) 16px;
-    grid-template-rows: repeat(5, auto);
+    grid-template-columns: minmax(1px, auto) repeat(6, minmax(30px, 132px)) minmax(1px, auto);
+    grid-column-gap: 16px;
+    margin-bottom: 4.8rem;
+}
+
+.main-topics h1 {
+    grid-column: 2/7;
+    font-size: 4rem;
+    padding-top: 1.6rem;
+}
+
+/* Case Study sections */
+.comp-matrix {
+    margin-top: 2.4rem;
+    height: auto;
+    width: 100%;
+    max-width: 500px;
+}
+
+
+.conc hr,
+.conc-p1,
+.conc-p2,
+.conc-p3 {
+    grid-column: 2/ 8;
+}
+
+.dashboard-wireframe {
+    grid-column: 2/8;
+    margin-top:2.4rem;
+    width: 100%;
+    height: auto;
+   
+}
+
+.flow-container {
+    position: relative;
+    width: 100%;
+}
+
+.flow-summary {
+    background-color: var(--light-green);
+    border-radius: 5rem;
+    margin: 1rem 2rem 0 2rem;
+    padding: 1.6rem 3.2rem;
+    padding-bottom: 4rem;
+}
+
+.flow {
+    margin-top: 2.4rem;
+    width: 100%;
+    height: auto;
+}
+
+.frustrations {
+    background-color: var(--gray-white);
+    border-radius: 5rem;
+    margin-top: 1.8rem;
+    padding: 2.4rem 3.2rem;
+}
+
+.frustrations span {
+    color: var(--purple);
+    font-weight: 700;
+}
+
+.key-takeaways {
+    background-color: var(--light-orange);
+    grid-column: 1/9;
+    padding-bottom: 2.4rem;
+    padding-top: 1.8rem;
+    display: grid;
+    grid-template-columns: minmax(1px, auto) repeat(6, minmax(30px, 132px)) minmax(1px, auto);
     grid-column-gap: 16px;
 }
 
-.title-section {
-    background-color: #F2F5FA;
+.key-takeaways h2,
+.key-takeaways hr,
+.key-takeaways p {
+    grid-column: 2 / 8;
+    justify-content: right;
+}
+
+
+.landing-wire {
+    grid-column: 4/span 3;
+    margin-top:2.4rem;
+    width: 60%;
+    height: auto;
+    display: none;
+}
+
+.persona {
     text-align: center;
+}
+
+.persona ul {
+    display: inline-block;
+    text-align: left;
+    width: 25rem;
 }
 
 .prephub-logo {
     padding-top: 4.2rem;
 }
 
+.section-separator {
+    grid-column: 2 / 8;
+    width: 100%;
+    margin-top: 3.2rem;
+    height: 4px
+}
+
+.title-section {
+    background-color: #F2F5FA;
+    height: 100vh;
+    text-align: center;
+}
+
 .title-section p {
-    padding-top: 1.8rem;
+    padding-top: .8rem;
     padding-bottom: 4.2rem;
 }
 
-.button {
-    background-color: #ffffff;
-    border: 2px solid var(--link-color);
-    border-radius: 30px;
-    color: var(--link-color);
-    letter-spacing: .1rem;
-    padding: .8rem 2rem;
-    text-decoration: none;
+.user-surveys h3 {
+    font-size: 4.8rem;
+    font-family: "Lora", "Times New Roman", serif;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.user-surveys h4 {
+    font-size: 3.4rem;
+    font-family: "Lora", "Times New Roman", serif;
+    line-height: 125%;
+}
+
+.user-surveys p {
+    width: 200px;
+    margin: 0 auto;
+}
+
+.survey-percent {
+    background-color: var(--light-green);
+    border-radius: 50%;
+    margin-top: 1.8rem;
+    padding-top: 5.6rem;
+    padding-bottom: 5.6rem;
+    text-align: center;
+    width: 30rem;
+}
+
+
+.wireframes {
+    background-color: #F2F5FA;
+    grid-column: 1/9;
+    padding-bottom: 1.8rem;
+    padding-top: 1.8rem;
+    display: grid;
+    grid-template-columns: minmax(1px, auto) repeat(6, minmax(30px, 132px)) minmax(1px, auto);
+    grid-column-gap: 16px;
+}
+
+.wireframes h2,
+.wireframes hr,
+.wireframes p,
+.wireframes ul {
+    grid-column: 2 / 8;
+    justify-content: right;
 }
 
 /*tablet*/
@@ -265,9 +469,16 @@ footer a {
         padding-right: 60px;
     }
 
-    .prephub-screenshot {
-        height: 400px;
+    /*PrepHub case study*/
+    .flow-summary {
+        position: absolute;
+        bottom: -24%;
     }
+
+    .wireframes {
+        margin-top: 10.4rem;
+    }
+
 }
 
 /*desktop*/
@@ -277,9 +488,6 @@ footer a {
         grid-column-gap: 72px;
     }
 
-    .logo {
-        padding-left: 72px;
-    }
 
     .name {
         left: 160px;
@@ -296,17 +504,17 @@ footer a {
         padding-right: 72px
     }
 
-  
+
 
     /*Homepage*/
     .hero {
         padding-left: 72px;
-        padding-right:72px;
+        padding-right: 72px;
         display: grid;
         /* grid-template-columns: 72px fit-content(132px) 72px;
         grid-template-rows: 1fr 1fr; */
     }
-    
+
     .prephub {
         padding-top: 8.0rem;
     }
