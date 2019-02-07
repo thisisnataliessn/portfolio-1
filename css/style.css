@@ -63,19 +63,23 @@ main {
 .hero {
     grid-column: 1 /span 8;
     grid-row: 1 / span 1;
-    display: grid;
+    padding-left: 16px;
+    padding-right: 16px;
+    /* display: grid;
     grid-template-columns: 16px 1fr 16px;
-    grid-template-rows: repeat(2, auto);
+    grid-template-rows: repeat(2, auto); */
 }
 
 .hero h1 {
-    grid-column: 2 / span 1;
-    grid-row: 1 / span 1;
+
+    /* grid-column: 2 / span 1;
+    grid-row: 1 / span 1; */
 }
 
 .hero p {
-    grid-column: 2 / span 1;
-    grid-row: 2 / span 1;
+
+    /* grid-column: 2 / span 1;
+    grid-row: 2 / span 1; */
 }
 
 .prephub {
@@ -166,7 +170,7 @@ footer a {
     font-size: 4.2rem;
     line-height: 125%;
     font-family: 'Lora', 'Times New Roman', serif;
-    padding-top: 80px;
+    padding-top: 160px;
 }
 
 .hero h1 span {
@@ -264,9 +268,11 @@ footer a {
 
     /*Homepage tablet*/
     .hero {
-        display: grid;
+        padding-left: 60px;
+        padding-right:60px;
+        /* display: grid;
         grid-template-columns: 60px 1fr 60px;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr; */
     }
 
     .hero h1 {
@@ -276,7 +282,10 @@ footer a {
     .prephub {
         padding-left: 60px;
         padding-right: 60px;
-        padding-top: 32px;
+    }
+
+    .prephub-screenshot {
+        height: 400px;
     }
 }
 
@@ -313,15 +322,22 @@ footer a {
         padding-right: 72px
     }
 
+  
+
     /*Homepage*/
     .hero {
-        display: grid;
+        padding-left: 72px;
+        padding-right:72px;
+        /* display: grid;
         grid-template-columns: 72px 1fr 72px;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr; */
+    }
+    
+    .prephub {
+        padding-top: 8.0rem;
     }
 
-
-    /*Typography for larger than mobile*/
+    /*Typography for eesktop*/
     .hero h1 {
         font-size: 7.2rem;
         line-height: 120%;
@@ -331,7 +347,6 @@ footer a {
         font-size: 3.2rem;
     }
 
-    .prephub-screenshot {
-        height: 400px;
-    }
+
+}
 }
