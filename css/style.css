@@ -303,6 +303,8 @@ footer a {
 
 .comp-matrix {
     margin-top: 2.4rem;
+    width: 100%;
+    height: auto;
     max-width: 500px;
 }
 
