@@ -37,6 +37,15 @@ a {
     text-decoration: none;
 }
 
+p b {
+    font-weight: 700;
+    color: var(--purple);
+}
+
+.shadow {
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.15);
+}
+
 /* Need to make these open in new tab when they go external */
 .button {
     background-color: #ffffff;
@@ -74,7 +83,7 @@ nav {
 
 main {
     grid-row: 2 / span 1;
-    grid-column: 1 / span 8;
+    grid-column: 1 / 9;
 }
 
 .hero {
@@ -109,9 +118,9 @@ main {
 
 .prephub-screenshot {
     padding-top: 42px;
+    height: auto;
     width: 100%;
     max-width: 700px;
-    height: auto;
 }
 
 .prephub hr {
@@ -162,7 +171,10 @@ nav a {
 }
 
 .logo {
-    padding-left: 16px;
+    position: absolute;
+    top: .6rem;
+    padding-left: 1.6rem;
+
 }
 
 /*Footer*/
@@ -255,7 +267,6 @@ footer a {
     max-width: 20rem;
     padding-bottom: 1.6rem;
     padding-top: 1.6rem;
-
 }
 
 .headline p {
@@ -276,28 +287,47 @@ footer a {
 }
 
 /* Case Study sections */
+
+.branding-intro-container {
+    position: relative;
+    width: 100%;
+}
+
+.branding-intro-container p {
+    background-color: var(--gray-white);
+    border-radius: 3rem;
+    margin: 1rem 2rem 0 2rem;
+    padding: 1.6rem 3.2rem;
+    padding-bottom: 1.8rem;
+}
+
 .comp-matrix {
     margin-top: 2.4rem;
-    height: auto;
-    width: 100%;
     max-width: 500px;
 }
 
+.conc h1 {
+    line-height: 125%;
+    max-width: 20rem;
+    padding-top: 1.6rem;
+}
+
+.conc-p {
+    padding-top: 1.6rem;
+}
 
 .conc hr,
-.conc-p1,
-.conc-p2,
-.conc-p3 {
+.conc-p {
     grid-column: 2/ 8;
 }
 
 .dashboard-wireframe {
     grid-column: 2/8;
-    margin-top:2.4rem;
+    margin-top: 2.4rem;
     width: 100%;
     height: auto;
-   
 }
+
 
 .flow-container {
     position: relative;
@@ -330,6 +360,32 @@ footer a {
     font-weight: 700;
 }
 
+.hi-fi-img {
+    width: 100%;
+    height: auto;
+}
+
+.hifi-menu-img {
+    max-width: 24rem;
+}
+
+.hifi-modal-img {
+    max-width: 40rem;
+}
+.hi-fi-mocks {
+    position: relative;
+    margin-bottom: 6rem;
+}
+.hi-fi-mocks .button {
+    position: absolute;
+    bottom: -8rem;
+}
+.icons-img {
+    width: 100%;
+    height: auto;
+    opacity: 0.5;
+}
+
 .key-takeaways {
     background-color: var(--light-orange);
     grid-column: 1/9;
@@ -347,13 +403,11 @@ footer a {
     justify-content: right;
 }
 
-
 .landing-wire {
     grid-column: 4/span 3;
-    margin-top:2.4rem;
+    margin-top: 2.4rem;
     width: 60%;
-    height: auto;
-    display: none;
+    /* display: none; */
 }
 
 .persona {
@@ -366,6 +420,11 @@ footer a {
     width: 25rem;
 }
 
+.pref-test {
+    height: auto;
+    width: 24%;
+}
+
 .prephub-logo {
     padding-top: 4.2rem;
 }
@@ -375,6 +434,14 @@ footer a {
     width: 100%;
     margin-top: 3.2rem;
     height: 4px
+}
+
+.style-guide {
+    float: right;
+    margin-top: 3.2rem;
+    width: 45%;
+    height: auto;
+
 }
 
 .title-section {
@@ -404,6 +471,11 @@ footer a {
 .user-surveys p {
     width: 200px;
     margin: 0 auto;
+}
+
+video {
+    grid-column: 2 / 8;
+    margin-top: 2.4rem;
 }
 
 .survey-percent {
@@ -470,6 +542,11 @@ footer a {
     }
 
     /*PrepHub case study*/
+    .branding-intro-container p {
+        position: absolute;
+        bottom: -0%;
+    }
+
     .flow-summary {
         position: absolute;
         bottom: -24%;
