@@ -76,7 +76,7 @@ hr {
 /*CSS Grid + layout - mobile first*/
 .container {
     display: grid;
-    grid-template-rows: 85px auto 65px;
+    grid-template-rows: 85px auto;
     grid-template-columns: minmax(16px, auto) repeat(6, minmax(30px, 100px)) minmax(16px, auto);
     grid-column-gap: 16px;
 }
@@ -196,6 +196,7 @@ footer {
 
 footer ul {
  margin-top:3rem;
+ margin-bottom: 3rem;
     }
 
 footer li {
