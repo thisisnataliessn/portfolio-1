@@ -565,7 +565,7 @@ footer a {
 .persona ul {
     display: inline-block;
     text-align: left;
-    width: 25rem;
+    width: 100%;
 }
 
 
