@@ -64,6 +64,7 @@ p b {
     background-color: var(--link-color);
     color: #ffffff;
 }
+
 hr {
     border: none;
     height: 3px;
@@ -189,15 +190,14 @@ footer {
     grid-column: 1 / 9;
     border-top: 3px solid var(--purple);
     font-size: 25px;
-    margin-top: 8rem;
     text-align: right;
     padding-right: 16px
 }
 
 footer ul {
- margin-top:3rem;
- margin-bottom: 3rem;
-    }
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
 
 footer li {
     display: inline;
@@ -311,7 +311,7 @@ footer a {
 }
 
 .branding-details-container {
-    grid-column:1/9;
+    grid-column: 1/9;
     position: relative;
     display: grid;
     grid-template-columns: minmax(1px, auto) repeat(6, minmax(30px, 100px)) minmax(1px, auto);
@@ -321,8 +321,9 @@ footer a {
 .branding-details-container p {
     grid-column: 2/8;
 }
+
 .comp-analysis {
-    grid-column:1/9;
+    grid-column: 1/9;
     position: relative;
     padding-top: 8rem;
     display: grid;
@@ -335,18 +336,19 @@ footer a {
 .comp-analysis p {
     grid-column: 2 / 8;
 }
-.comp-analysis .button{
+
+.comp-analysis .button {
     grid-column: 3/7;
     margin-top: 2.4rem;
 }
 
 .comp-matrix {
-    grid-column:2/8;
+    grid-column: 2/8;
     justify-content: space-around;
     margin-top: 2.4rem;
     width: 100%;
     height: auto;
-  ;
+    ;
 }
 
 .conc h1 {
@@ -432,6 +434,7 @@ footer a {
 .hi-fi-mocks img {
     grid-column: 2/8;
 }
+
 .hi-fi-mocks .button {
     grid-column: 3/7;
     margin-top: 2.4rem;
@@ -446,10 +449,11 @@ footer a {
 
 .style-guide {
     grid-column: 3/7;
-    margin-top:3.2rem;
+    margin-top: 3.2rem;
     width: 100%;
     height: auto;
 }
+
 .key-takeaways {
     background-color: var(--light-orange);
     grid-column: 1/9;
@@ -463,7 +467,7 @@ footer a {
 .key-takeaways h2,
 .key-takeaways hr,
 .key-takeaways p {
-    grid-column: 2 / 8;  
+    grid-column: 2 / 8;
 }
 
 .landing-wire {
@@ -474,7 +478,7 @@ footer a {
 }
 
 .personas {
-    grid-column:1/9;
+    grid-column: 1/9;
     position: relative;
     display: grid;
     grid-template-columns: minmax(1px, auto) repeat(6, minmax(30px, 100px)) minmax(1px, auto);
@@ -489,7 +493,7 @@ footer a {
 }
 
 .personas h5 {
-        font-size: 1.8rem;
+    font-size: 1.8rem;
 }
 
 .personas h6 {
