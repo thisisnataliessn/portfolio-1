@@ -53,11 +53,17 @@ p b {
     border-radius: 30px;
     color: var(--link-color);
     font-size: 1.8rem;
-    letter-spacing: .05rem;
+    line-height: 120%;
     padding: 1.5rem 3rem;
     text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
 }
 
+.button:hover {
+    background-color: var(--link-color);
+    color: #ffffff;
+}
 hr {
     border: none;
     height: 3px;
@@ -71,7 +77,7 @@ hr {
 .container {
     display: grid;
     grid-template-rows: 85px auto 65px;
-    grid-template-columns: minmax(16px, auto) repeat(6, minmax(30px, 132px)) minmax(16px, auto);
+    grid-template-columns: minmax(16px, auto) repeat(6, minmax(30px, 100px)) minmax(16px, auto);
     grid-column-gap: 16px;
 }
 
@@ -128,6 +134,7 @@ main {
     margin: .8rem auto;
 }
 
+
 /* Nav */
 nav {
     background-color: var(--gray-white);
@@ -179,22 +186,23 @@ nav a {
 
 /*Footer*/
 footer {
-    grid-row: 3/span 1;
-    grid-column: 1 / span 8;
+    grid-column: 1 / 9;
+    border-top: 3px solid var(--purple);
     font-size: 25px;
-    margin-top: 3.2rem;
+    margin-top: 8rem;
     text-align: right;
     padding-right: 16px
 }
 
 footer ul {
-    position: relative;
-    top: 30px;
-}
+ margin-top:3rem;
+    }
 
 footer li {
     display: inline;
     padding: 8px;
+    opacity: .7;
+    padding-bottom: 3.2rem;
 }
 
 footer a {
@@ -275,9 +283,9 @@ footer a {
 
 .main-topics {
     display: grid;
-    grid-template-columns: minmax(1px, auto) repeat(6, minmax(30px, 132px)) minmax(1px, auto);
+    grid-template-columns: minmax(1px, auto) repeat(6, minmax(30px, 100px)) minmax(1px, auto);
     grid-column-gap: 16px;
-    margin-bottom: 4.8rem;
+    margin-bottom: 3.4rem;
 }
 
 .main-topics h1 {
@@ -301,11 +309,43 @@ footer a {
     padding-bottom: 1.8rem;
 }
 
+.branding-details-container {
+    grid-column:1/9;
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(1px, auto) repeat(6, minmax(30px, 100px)) minmax(1px, auto);
+    grid-column-gap: 16px;
+}
+
+.branding-details-container p {
+    grid-column: 2/8;
+}
+.comp-analysis {
+    grid-column:1/9;
+    position: relative;
+    padding-top: 8rem;
+    display: grid;
+    grid-template-columns: minmax(1px, auto) repeat(6, minmax(30px, 100px)) minmax(1px, auto);
+    grid-column-gap: 16px;
+}
+
+.comp-analysis h2,
+.comp-analysis hr,
+.comp-analysis p {
+    grid-column: 2 / 8;
+}
+.comp-analysis .button{
+    grid-column: 3/7;
+    margin-top: 2.4rem;
+}
+
 .comp-matrix {
+    grid-column:2/8;
+    justify-content: space-around;
     margin-top: 2.4rem;
     width: 100%;
     height: auto;
-    max-width: 500px;
+  ;
 }
 
 .conc h1 {
@@ -330,7 +370,6 @@ footer a {
     height: auto;
 }
 
-
 .flow-container {
     position: relative;
     width: 100%;
@@ -338,10 +377,10 @@ footer a {
 
 .flow-summary {
     background-color: var(--light-green);
-    border-radius: 5rem;
+    border-radius: 3rem;
     margin: 1rem 2rem 0 2rem;
     padding: 1.6rem 3.2rem;
-    padding-bottom: 4rem;
+    padding-bottom: 3.2rem;
 }
 
 .flow {
@@ -374,45 +413,104 @@ footer a {
 .hifi-modal-img {
     max-width: 40rem;
 }
+
+
+
 .hi-fi-mocks {
     position: relative;
     margin-bottom: 6rem;
+    grid-column: 1/9;
+    display: grid;
+    grid-template-columns: minmax(1px, auto) repeat(6, minmax(30px, 100px)) minmax(1px, auto);
+    grid-column-gap: 16px;
+}
+
+.hi-fi-mocks h2,
+.hi-fi-mocks hr,
+.hi-fi-mocks p,
+.hi-fi-mocks img {
+    grid-column: 2/8;
 }
 .hi-fi-mocks .button {
-    position: absolute;
-    bottom: -8rem;
+    grid-column: 3/7;
+    margin-top: 2.4rem;
 }
+
 .icons-img {
     width: 100%;
     height: auto;
     opacity: 0.5;
 }
 
+
+.style-guide {
+    grid-column: 3/7;
+    margin-top:3.2rem;
+    width: 100%;
+    height: auto;
+}
 .key-takeaways {
     background-color: var(--light-orange);
     grid-column: 1/9;
     padding-bottom: 2.4rem;
     padding-top: 1.8rem;
     display: grid;
-    grid-template-columns: minmax(1px, auto) repeat(6, minmax(30px, 132px)) minmax(1px, auto);
+    grid-template-columns: minmax(1px, auto) repeat(6, minmax(30px, 100px)) minmax(1px, auto);
     grid-column-gap: 16px;
 }
 
 .key-takeaways h2,
 .key-takeaways hr,
 .key-takeaways p {
-    grid-column: 2 / 8;
-    justify-content: right;
+    grid-column: 2 / 8;  
 }
 
 .landing-wire {
     grid-column: 4/span 3;
     margin-top: 2.4rem;
     width: 60%;
-    /* display: none; */
+    display: none;
+}
+
+.personas {
+    grid-column:1/9;
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(1px, auto) repeat(6, minmax(30px, 100px)) minmax(1px, auto);
+    grid-column-gap: 16px;
+}
+
+.personas h4 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    padding-bottom: .8rem;
+    padding-top: 1.6rem;
+}
+
+.personas h5 {
+        font-size: 1.8rem;
+}
+
+.personas h6 {
+    font-weight: 700;
+    font-size: 2.4rem;
+    padding-bottom: .8rem;
+}
+
+.personas h2,
+.personas hr,
+.personas p {
+    grid-column: 2 / 8;
+}
+
+.personas .button {
+    grid-column: 3/7;
+    margin-top: 2.4rem;
 }
 
 .persona {
+    grid-column: 3/7;
+    padding-top: 3.2rem;
     text-align: center;
 }
 
@@ -431,19 +529,11 @@ footer a {
     padding-top: 4.2rem;
 }
 
-.section-separator {
+.section-separator-hr {
     grid-column: 2 / 8;
     width: 100%;
-    margin-top: 3.2rem;
+    margin-top: 4.8rem;
     height: 4px
-}
-
-.style-guide {
-    float: right;
-    margin-top: 3.2rem;
-    width: 45%;
-    height: auto;
-
 }
 
 .title-section {
@@ -497,7 +587,7 @@ video {
     padding-bottom: 1.8rem;
     padding-top: 1.8rem;
     display: grid;
-    grid-template-columns: minmax(1px, auto) repeat(6, minmax(30px, 132px)) minmax(1px, auto);
+    grid-template-columns: minmax(1px, auto) repeat(6, minmax(30px, 100px)) minmax(1px, auto);
     grid-column-gap: 16px;
 }
 
@@ -506,8 +596,13 @@ video {
 .wireframes p,
 .wireframes ul {
     grid-column: 2 / 8;
-    justify-content: right;
 }
+
+.wireframes .button {
+    grid-column: 3/7;
+    margin-top: 2.4rem;
+}
+
 
 /*tablet*/
 @media screen and (min-width:575px) {
@@ -590,7 +685,7 @@ video {
         padding-left: 72px;
         padding-right: 72px;
         display: grid;
-        /* grid-template-columns: 72px fit-content(132px) 72px;
+        /* grid-template-columns: 72px fit-content(100px) 72px;
         grid-template-rows: 1fr 1fr; */
     }
 
