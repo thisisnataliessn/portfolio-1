@@ -1,6 +1,15 @@
 $(function(){
     let backgroundColor = $('.title-section').css('background-color');
-    $('nav').css({
+    $('footer').css({
         'background-color': backgroundColor
     })
 })
+
+
+
+
+$('.main-carousel').flickity({
+    // options
+    cellAlign: 'left',
+    contain: true
+  });

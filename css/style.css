@@ -9,11 +9,14 @@
     --light-green: #D4E3DE;
     --gray-white: #f6f6f6;
     --light-orange: #F6E5D9;
+    --light-blue: #F2F5FA;
+    --black: #121213;
 }
+
 
 body {
     background-color: var(--gray-white);
-    color: #121213;
+    color: var(--black);
     width: 100%;
 }
 
@@ -29,12 +32,24 @@ html {
 p {
     font-size: 1.8rem;
     line-height: 125%;
+    padding-bottom: 1.6rem;
 }
 
 a {
     color: var(--link-color);
     font-weight: 700;
     text-decoration: none;
+}
+
+
+hr {
+    border: none;
+    height: 3px;
+    width: 24rem;
+    background-color: var(--purple);
+    text-align: left;
+    margin: 0 auto 0 0;
+    margin-bottom: 1.6rem;
 }
 
 p b {
@@ -65,14 +80,6 @@ p b {
     color: #ffffff;
 }
 
-hr {
-    border: none;
-    height: 3px;
-    width: 24rem;
-    background-color: var(--purple);
-    text-align: left;
-    margin: 0 auto 0 0
-}
 
 /*CSS Grid + layout - mobile first*/
 .container {
@@ -100,7 +107,7 @@ main {
     padding-right: 16px;
     display: grid;
     grid-template-columns: minmax(16px, auto) fit-content(1000px) minmax(16px, auto);
-    grid-template-rows: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
 }
 
 .hero h1 {
@@ -114,14 +121,21 @@ main {
     grid-row: 2 / span 1;
 }
 
+.chevron {
+    margin: 16rem 50% 8rem 50%;
+}
+
 .prephub {
+    background-color: var(--light-blue);
     grid-row: 2 / span 1;
     grid-column: 1 /span 8;
     padding-left: 16px;
     padding-right: 16px;
     padding-top: 80px;
+    padding-bottom: 80px;
     text-align: center;
 }
+
 
 .prephub-screenshot {
     padding-top: 42px;
@@ -138,7 +152,7 @@ main {
 
 /* Nav */
 nav {
-    background-color: var(--gray-white);
+    background-color: #ffffff;
     border-bottom: 3px solid var(--purple);
     font-size: 1.6rem;
     position: sticky;
@@ -161,7 +175,7 @@ nav li a:hover {
 }
 
 nav a {
-    color: #121213;
+    color: var(--black);
 }
 
 
@@ -187,6 +201,7 @@ nav a {
 
 /*Footer*/
 footer {
+
     grid-column: 1 / 9;
     border-top: 3px solid var(--purple);
     font-size: 25px;
@@ -207,7 +222,7 @@ footer li {
 }
 
 footer a {
-    color: #121213;
+    color: var(--black);
 }
 
 /* Homepage Typography*/
@@ -278,20 +293,16 @@ footer a {
     padding-top: 1.6rem;
 }
 
-.headline p {
-    padding-top: 1.6rem;
-}
-
 .main-topics {
     display: grid;
     grid-template-columns: minmax(1px, auto) repeat(6, minmax(30px, 100px)) minmax(1px, auto);
     grid-column-gap: 16px;
-    }
+}
 
 .main-topics h1 {
     grid-column: 2/7;
     font-size: 4rem;
-    padding-top: 1.6rem;
+
 }
 
 /* Case Study sections */
@@ -353,7 +364,6 @@ footer a {
 .conc h1 {
     line-height: 125%;
     max-width: 20rem;
-    padding-top: 1.6rem;
 }
 
 .conc-p {
@@ -377,11 +387,13 @@ footer a {
     border-radius: 3rem;
     margin: 1rem 2rem 0 2rem;
     padding: 1.6rem 3.2rem;
-    padding-bottom: 3.2rem;
+    padding-bottom: 0rem;
+    
 }
 
 .flow {
     margin-top: 2.4rem;
+
     width: 100%;
     height: auto;
 }
@@ -414,7 +426,9 @@ footer a {
 .hi-fi-mocks {
     position: relative;
     background-color: var(--gray-white);
-    margin-bottom: 6rem;
+    margin-top: 0rem;
+    padding-top: 1.2rem;
+    padding-bottom: 1.6rem;
     grid-column: 1/9;
     display: grid;
     grid-template-columns: minmax(1px, auto) repeat(6, minmax(30px, 100px)) minmax(1px, auto);
@@ -424,8 +438,30 @@ footer a {
 .hi-fi-mocks h2,
 .hi-fi-mocks hr,
 .hi-fi-mocks p,
-.hi-fi-mocks img {
+.hi-fi-mocks .grid-view,
+
+.hi-fi-mocks .hover-screenshot,
+.hi-fi-mocks .carousel {
     grid-column: 2/8;
+}
+
+.hi-fi-mocks .left-nav {
+    width: 200%;
+}
+
+.hi-fi-mocks .left-nav-1 {
+    margin-top: 50%;
+    grid-column: 3/4;
+
+}
+
+.hi-fi-mocks .left-nav-2 {
+    grid-column: 5/6;
+
+}
+
+.carousel-cell {
+    margin-right: 5rem;
 }
 
 .hi-fi-mocks .button {
@@ -439,8 +475,13 @@ footer a {
     height: auto;
     opacity: 0.5;
 }
+.letter {
+    padding-left: 4rem;
+}
 
-
+.number {
+    font-size: 2.4rem;
+}
 .style-guide {
     grid-column: 3/7;
     margin-top: 3.2rem;
@@ -469,6 +510,10 @@ footer a {
     margin-top: 2.4rem;
     width: 60%;
     display: none;
+}
+
+.hi-fi-img {
+    margin-bottom: 4rem;
 }
 
 .personas {
@@ -504,13 +549,17 @@ footer a {
 
 .personas .button {
     grid-column: 3/7;
-    margin-top: 2.4rem;
 }
 
 .persona {
+    border: 3px dotted var(--purple);
+    border-radius: 10%;
     grid-column: 3/7;
+    margin-bottom: 2.4rem;
     padding-top: 3.2rem;
+    padding-bottom: 3.2rem;
     text-align: center;
+
 }
 
 .persona ul {
@@ -519,9 +568,57 @@ footer a {
     width: 25rem;
 }
 
-.pref-test {
+
+.pref-testing {
+    grid-column: 1/9;
+    display: grid;
+    grid-template-columns: minmax(1px, auto) repeat(6, minmax(30px, 100px)) minmax(1px, auto);
+    grid-column-gap: 16px;
+}
+
+.pref-testing h2,
+.pref-testing hr,
+.pref-testing p {
+    grid-column: 2/8;
+}
+
+.pref-test-1 {
+    position: relative;
+    background-color: var(--light-green);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    grid-column: 1/9;
+    display: grid;
+    grid-template-columns: minmax(1px, auto) repeat(6, minmax(30px, 100px)) minmax(1px, auto);
+    grid-column-gap: 16px;
+}
+
+.pref-test-2 {
+    padding-top: 4rem;
+    position: relative;
+    background-color: var(--light-orange);
+    grid-column: 1/9;
+    display: grid;
+    grid-template-columns: minmax(1px, auto) repeat(6, minmax(30px, 100px)) minmax(1px, auto);
+    grid-column-gap: 16px;
+    padding-bottom: 4rem;
+}
+
+.pref-test-img {
+    grid-column: 2/8;
     height: auto;
-    width: 24%;
+    width: 125%;
+}
+
+.pref-test-a {
+    grid-column: 2 /5;
+    margin-left: 10%;
+}
+
+.pref-test-b {
+    grid-column: 5/8;
+    margin-left: -30%;
+    padding-top: 16rem;
 }
 
 .prephub-logo {
@@ -531,12 +628,23 @@ footer a {
 .section-separator-hr {
     grid-column: 2 / 8;
     width: 100%;
-    margin-top: 4.8rem;
+    margin-top: 2.4rem;
     height: 4px
 }
 
+
+.survey-percent {
+    background-color: var(--light-green);
+    border-radius: 50%;
+    margin-top: 1.8rem;
+    padding-top: 5.6rem;
+    padding-bottom: 5.6rem;
+    text-align: center;
+    width: 30rem;
+}
+
 .title-section {
-    background-color: #F2F5FA;
+    background-color: var(--light-blue);
     height: 100vh;
     text-align: center;
 }
@@ -569,19 +677,10 @@ video {
     margin-top: 2.4rem;
 }
 
-.survey-percent {
-    background-color: var(--light-green);
-    border-radius: 50%;
-    margin-top: 1.8rem;
-    padding-top: 5.6rem;
-    padding-bottom: 5.6rem;
-    text-align: center;
-    width: 30rem;
-}
 
 
 .wireframes {
-    background-color: #F2F5FA;
+    background-color: var(--light-blue);
     grid-column: 1/9;
     padding-bottom: 1.8rem;
     padding-top: 1.8rem;
@@ -640,7 +739,7 @@ video {
     /*PrepHub case study*/
     .branding-intro-container p {
         position: absolute;
-        bottom: -0%;
+        bottom: 0%;
     }
 
     .flow-summary {
@@ -678,21 +777,18 @@ video {
     }
 
 
-
     /*Homepage*/
     .hero {
         padding-left: 72px;
         padding-right: 72px;
         display: grid;
-        /* grid-template-columns: 72px fit-content(100px) 72px;
-        grid-template-rows: 1fr 1fr; */
     }
 
     .prephub {
         padding-top: 8.0rem;
     }
 
-    /*Typography for eesktop*/
+    /*Typography for desktop*/
     .hero h1 {
         font-size: 7.2rem;
         line-height: 120%;
@@ -701,6 +797,3 @@ video {
     .hero p {
         font-size: 3.2rem;
     }
-
-
-}
