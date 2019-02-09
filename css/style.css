@@ -286,8 +286,7 @@ footer a {
     display: grid;
     grid-template-columns: minmax(1px, auto) repeat(6, minmax(30px, 100px)) minmax(1px, auto);
     grid-column-gap: 16px;
-    margin-bottom: 3.4rem;
-}
+    }
 
 .main-topics h1 {
     grid-column: 2/7;
@@ -361,11 +360,6 @@ footer a {
     padding-top: 1.6rem;
 }
 
-.conc hr,
-.conc-p {
-    grid-column: 2/ 8;
-}
-
 .dashboard-wireframe {
     grid-column: 2/8;
     margin-top: 2.4rem;
@@ -417,10 +411,9 @@ footer a {
     max-width: 40rem;
 }
 
-
-
 .hi-fi-mocks {
     position: relative;
+    background-color: var(--gray-white);
     margin-bottom: 6rem;
     grid-column: 1/9;
     display: grid;
@@ -438,6 +431,7 @@ footer a {
 .hi-fi-mocks .button {
     grid-column: 3/7;
     margin-top: 2.4rem;
+    margin-bottom: 2.4rem;
 }
 
 .icons-img {
