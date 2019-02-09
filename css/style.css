@@ -388,12 +388,10 @@ footer a {
     margin: 1rem 2rem 0 2rem;
     padding: 1.6rem 3.2rem;
     padding-bottom: 0rem;
-    
-}
+    }
 
 .flow {
     margin-top: 2.4rem;
-
     width: 100%;
     height: auto;
 }
@@ -644,7 +642,7 @@ footer a {
 
 .title-section {
     background-color: var(--light-blue);
-    height: 100vh;
+    height: calc(100vh-65px);
     text-align: center;
 }
 
@@ -676,8 +674,6 @@ footer a {
     margin-top: 2.4rem;
 }
 
-
-
 .wireframes {
     background-color: var(--light-blue);
     grid-column: 1/9;
@@ -700,6 +696,11 @@ footer a {
     margin-top: 2.4rem;
 }
 
+
+/*Bio Page*/
+.bio-title-section p {
+  font-size: 2.4rem;
+}
 
 /*tablet*/
 @media screen and (min-width:575px) {
