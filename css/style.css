@@ -263,10 +263,10 @@ footer a {
 
 /*PrepHub case study*/
 .case-study h2 {
-    font-size: 2.5rem;
+   
     font-family: "Lora", "Times New Roman", serif;
     line-height: 2.8rem;
-    text-transform: uppercase;
+
 }
 
 .case-study ul {
@@ -284,6 +284,7 @@ footer a {
 .headline {
     grid-column: 2 / 8;
     margin-top: 2.4rem;
+
 }
 
 .headline h2 {
@@ -291,6 +292,9 @@ footer a {
     max-width: 20rem;
     padding-bottom: 1.6rem;
     padding-top: 1.6rem;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    font-family: "Lora", "Times New Roman", serif;
 }
 
 .main-topics {
@@ -698,9 +702,31 @@ footer a {
 
 
 /*Bio Page*/
-.bio-title-section p {
-  font-size: 2.4rem;
+.headshot {
+    height:auto;
+    width: 50%;
+    max-width: 50rem;
+    margin-top: 2.4rem;
 }
+
+.bio-title-section {
+    text-align: center;
+}
+.bio-title-section p {
+  margin-top: 2.4rem;
+  font-size: 2.4rem;
+  padding-left: 16px;
+  padding-right: 16px;
+  }
+
+  .bio-container{
+    grid-column: 1/9;
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(1px, auto) repeat(6, minmax(30px, 100px)) minmax(1px, auto);
+    grid-column-gap: 16px;
+  }
+
 
 /*tablet*/
 @media screen and (min-width:575px) {
@@ -787,6 +813,13 @@ footer a {
         padding-top: 8.0rem;
     }
 
+
+    /*Bio*/
+    .bio-title-section p {
+         padding-left: 72px;
+        padding-right: 72px;
+   
+      }
     /*Typography for desktop*/
     .hero h1 {
         font-size: 7.2rem;
