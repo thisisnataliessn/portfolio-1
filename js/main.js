@@ -1,10 +1,3 @@
-$(function(){
-    let backgroundColor = $('.title-section').css('background-color');
-    $('footer').css({
-        'background-color': backgroundColor
-    })
-})
-
 //Initiate carousel
 $('.main-carousel').flickity({
     // options
