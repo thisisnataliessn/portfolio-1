@@ -881,6 +881,13 @@ footer a {
         padding-bottom: 2.4rem;
     }
 
+    .angela {
+        grid-column: 2/5;
+    }
+
+    .kim {
+        grid-column: 5/8;
+    }
     .stat-1 h3,
     .stat-3 h3 {
         padding-top: 2.4rem
@@ -897,8 +904,8 @@ footer a {
     .stat-2 p {
         padding-right: 2rem;
         padding-left: 2rem;
-
     }
+
 
     .user-surveys .stat-3 {
         grid-column: 6/9;
@@ -1014,7 +1021,19 @@ footer a {
         padding-top: 0rem;
     }
 
-
+    .roles-etc .roles {
+        grid-column:2/4;
+    }
+    
+    .roles-etc .deliverables {
+        grid-column:4/6;
+    }
+    .roles-etc .tools {
+        grid-column:6/8;
+    }
+    .roles-etc hr {
+        width: 20rem;
+    }
  
     /*Bio desktop*/
     .bio .circle {
@@ -1035,19 +1054,7 @@ footer a {
         padding-top: 12rem;
 
     }
-    .roles-etc .roles {
-        grid-column:2/4;
-    }
-    
-    .roles-etc .deliverables {
-        grid-column:4/6;
-    }
-    .roles-etc .tools {
-        grid-column:6/8;
-    }
-    .roles-etc hr {
-        width: 20rem;
-    }
+
     
 
 }
