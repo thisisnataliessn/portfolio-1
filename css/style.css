@@ -368,6 +368,13 @@ footer a {
     grid-column-gap: 16px;
 }
 
+.circles-container {
+    grid-column: 2/8;
+    display: grid;
+    grid-template-columns: minmax(1px, auto) repeat(6, minmax(30px, 100px)) minmax(1px, auto);
+    grid-column-gap: 16px;
+}
+
 .branding-details-container p {
     grid-column: 2/8;
 }
@@ -555,7 +562,6 @@ footer a {
 .hi-fi-img {
     margin-bottom: 4rem;
 }
-
 .personas {
     grid-column: 1/9;
     position: relative;
@@ -663,6 +669,7 @@ footer a {
     padding-top: 4.2rem;
 }
 
+
 .section-separator-hr {
     grid-column: 2 / 8;
     width: 100%;
@@ -691,13 +698,7 @@ footer a {
     grid-column: 2/8;
 }
 
-.circles-container {
-    grid-column: 2/8;
-    display: grid;
-    grid-template-columns: minmax(1px, auto) repeat(6, minmax(30px, 100px)) minmax(1px, auto);
-    grid-column-gap: 16px;
 
-}
 
 .user-surveys h3 {
     font-size: 4.8rem;
@@ -1034,6 +1035,19 @@ footer a {
         padding-top: 12rem;
 
     }
-
+    .roles-etc .roles {
+        grid-column:2/4;
+    }
+    
+    .roles-etc .deliverables {
+        grid-column:4/6;
+    }
+    .roles-etc .tools {
+        grid-column:6/8;
+    }
+    .roles-etc hr {
+        width: 20rem;
+    }
+    
 
 }
