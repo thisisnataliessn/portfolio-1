@@ -20,6 +20,7 @@ body {
     width: 100%;
 }
 
+body .bio,
 body .case-study {
     background-color: #ffffff;
 }
@@ -39,6 +40,22 @@ a {
     color: var(--link-color);
     font-weight: 700;
     text-decoration: none;
+}
+
+.circle {
+    background-color: var(--light-green);
+    border-radius: 50%;
+    grid-column: 3/7;
+    margin-top: 1.6rem;
+    padding-top: 5.6rem;
+    text-align: center;
+}
+
+.circle h3 {
+    font-size: 3.2rem;
+    font-family: "Lora", "Times New Roman", serif;
+    margin: 0 auto;
+    text-transform: capitalize;
 }
 
 
@@ -263,7 +280,6 @@ footer a {
 
 /*PrepHub case study*/
 .case-study h2 {
-   
     font-family: "Lora", "Times New Roman", serif;
     line-height: 2.8rem;
 
@@ -272,7 +288,7 @@ footer a {
 .case-study ul {
     list-style-type: disc;
     list-style-position: inside;
- }
+}
 
 .case-study li,
 .case-study p {
@@ -284,13 +300,12 @@ footer a {
 .headline {
     grid-column: 2 / 8;
     margin-top: 2.4rem;
-
 }
 
 .headline h2 {
     line-height: 1.3;
     max-width: 24rem;
-    
+
     padding-top: 1.6rem;
     font-size: 2.4rem;
     text-transform: uppercase;
@@ -306,7 +321,7 @@ footer a {
 .main-topics h1 {
     grid-column: 2/7;
     font-size: 4rem;
-    margin-top:-1.6rem;
+    margin-top: -1.6rem;
 }
 
 /* Case Study sections */
@@ -392,7 +407,7 @@ footer a {
     margin: 1rem 2rem 0 2rem;
     padding: 1.6rem 3.2rem;
     padding-bottom: 0rem;
-    }
+}
 
 .flow {
     margin-top: 2.4rem;
@@ -477,6 +492,7 @@ footer a {
     height: auto;
     opacity: 0.5;
 }
+
 .letter {
     padding-left: 4rem;
 }
@@ -484,6 +500,7 @@ footer a {
 .number {
     font-size: 2.4rem;
 }
+
 .style-guide {
     grid-column: 3/7;
     margin-top: 3.2rem;
@@ -543,6 +560,7 @@ footer a {
     padding-bottom: .8rem;
 }
 
+
 .personas h2,
 .personas hr,
 .personas p {
@@ -560,7 +578,6 @@ footer a {
     margin-bottom: 2.4rem;
     padding: 3.2rem 1rem 3.2rem 1rem;
     text-align: center;
-
 }
 
 .persona ul {
@@ -568,7 +585,6 @@ footer a {
     text-align: left;
     width: 100%;
 }
-
 
 .pref-testing {
     grid-column: 1/9;
@@ -633,12 +649,11 @@ footer a {
     height: 4px
 }
 
-
-
 .title-section {
     background-color: var(--light-blue);
-    height: calc(100vh-65px);
+    /* height: calc(100vh-65px); */
     text-align: center;
+    padding-bottom: 8rem;
 }
 
 .title-section p {
@@ -646,18 +661,17 @@ footer a {
     padding-bottom: 4.2rem;
 }
 
-.user-surveys h3 {
-    font-size: 4.8rem;
-    font-family: "Lora", "Times New Roman", serif;
-    width: 200px;
-    margin: 0 auto;
-}
 
 .circles-container {
- grid-column: 1/9;
- display: grid;
- grid-template-columns: minmax(1px, auto) repeat(6, minmax(30px, 100px)) minmax(1px, auto);
- grid-column-gap: 16px;
+    grid-column: 2/8;
+    display: grid;
+    grid-template-columns: minmax(1px, auto) repeat(6, minmax(30px, 100px)) minmax(1px, auto);
+    grid-column-gap: 16px;
+
+}
+
+.user-surveys h3 {
+    font-size: 4.8rem;
 }
 
 .user-surveys h4 {
@@ -667,20 +681,21 @@ footer a {
 }
 
 .user-surveys p {
-    width: 200px;
+    max-width: 180px;
     margin: 0 auto;
 }
-.user-surveys .survey-percent {
-    background-color: var(--light-green);
-    border-radius: 50%;
-    grid-column: 3/7;
-    margin-top: 1.8rem;
-    padding-top: 5.6rem;
-    padding-bottom: 5.6rem;
-    text-align: center;
-    /* width: 30rem; */
+
+.user-surveys .circle {
+    padding-bottom: 3.2rem;
 }
 
+.stat-2 {
+    background-color: var(--light-orange);
+}
+
+.stat-3 {
+    background-color: var(--light-blue);
+}
 
 .prephub-video {
     grid-column: 2 / 8;
@@ -711,30 +726,58 @@ footer a {
 
 
 /*Bio Page*/
-.headshot {
-    height:auto;
-    width: 50%;
-    max-width: 50rem;
-    margin-top: 2.4rem;
+
+.bio-container {
+    display: grid;
+    grid-template-columns: minmax(1px, auto) repeat(6, minmax(30px, 100px)) minmax(1px, auto);
+    grid-column-gap: 16px;
+}
+
+.bio-section p {
+    line-height: 2.8rem;
+    margin-left: 1.6rem;
 }
 
 .bio-title-section {
     text-align: center;
 }
-.bio-title-section p {
-  margin-top: 2.4rem;
-  font-size: 2.4rem;
-  padding-left: 16px;
-  padding-right: 16px;
-  }
 
-  .bio-container{
+.bio-title-section p {
+    font-size: 2.4rem;
+    margin: 0 auto;
+    max-width: 55rem;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 2.4rem;
+}
+
+
+.bio .circle {
     grid-column: 1/9;
-    position: relative;
-    display: grid;
-    grid-template-columns: minmax(1px, auto) repeat(6, minmax(30px, 100px)) minmax(1px, auto);
-    grid-column-gap: 16px;
-  }
+    text-align: left;
+    border-radius: 10%;
+    padding: 4rem 1.6rem;
+}
+
+.bio .circle p {
+    line-height: 2.8rem;
+    margin-top: 1.6rem;
+}
+
+.headshot {
+    height: auto;
+    width: 50%;
+    max-width: 50rem;
+    margin-top: 2.4rem;
+}
+
+.love-2 {
+    background-color: var(--light-orange);
+}
+
+.love-3 {
+    background-color: var(--light-blue);
+}
 
 
 /*tablet*/
@@ -771,7 +814,7 @@ footer a {
         padding-right: 60px;
     }
 
-    /*PrepHub case study*/
+    /*PrepHub case study tablet*/
     .branding-intro-container p {
         position: absolute;
         bottom: 0%;
@@ -786,7 +829,82 @@ footer a {
         margin-top: 10.4rem;
     }
 
+
+    .circle {
+        border-radius: 50%;
+        margin-top: 0rem;
+        padding-top: 2.4rem;
+        padding-bottom: 2.4rem;
+    }
+
+    .stat-1 h3,
+    .stat-3 h3 {
+        padding-top: 2.4rem
+    }
+
+    .user-surveys .stat-1 {
+        grid-column: 1/4;
+    }
+
+    .user-surveys .stat-2 {
+        grid-column: 4/6;
+    }
+
+    .stat-2 p {
+        padding-right: 2rem;
+        padding-left: 2rem;
+
+    }
+
+    .user-surveys .stat-3 {
+        grid-column: 6/9;
+    }
+
+    /*Bio tablet*/
+    .bio .circle {
+        max-width: 50rem;
+        margin: 0 .8rem;
+    }
+
+    .bio .circle h3 {
+        text-align: center;
+    }
+
+    .bio .circles-container {
+        grid-column: 1/9;
+        display: grid;
+        grid-template-columns: minmax(40px, 72px) auto auto auto minmax(40px, 72px);
+        grid-template-rows: auto;
+        grid-gap: 0px;
+    }
+
+    .circles-container .love-1 {
+        grid-column: 2/3;
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+
+    .circles-container .love-2 {
+        grid-column: 4/5;
+        padding-left: 8rem;
+        padding-right: 6rem;
+
+    }
+
+
+    .circles-container .love-3 {
+        grid-column: 2/5;
+        grid-row: 2;
+        padding-left: 6rem;
+        padding-right: 4rem;
+        margin: 1.6rem auto;
+
+    }
+
+
 }
+
 
 /*desktop*/
 @media screen and (min-width: 991px) {
@@ -823,12 +941,8 @@ footer a {
     }
 
 
-    /*Bio*/
-    .bio-title-section p {
-         padding-left: 72px;
-        padding-right: 72px;
-   
-      }
+
+
     /*Typography for desktop*/
     .hero h1 {
         font-size: 7.2rem;
@@ -838,4 +952,26 @@ footer a {
     .hero p {
         font-size: 3.2rem;
     }
+
+    /*Bio desktop*/
+
+    .bio .circle {
+        border-radius: 50%;
+        padding-top: 12rem;
+        padding-bottom: 12rem;
+        margin-top: 0rem;
+    }
+
+    .circles-container .love-1 {
+        margin: 0 .8rem 0 auto;
+    }
+    .circles-container .love-3 {
+        grid-column: 3;
+        grid-row: 1;
+        padding-left: 6rem;
+        padding-right: 4rem;
+        padding-top:12rem;
+        padding-bottom: 12rem;
+    }
+
 }
