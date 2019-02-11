@@ -962,6 +962,9 @@ footer a {
 
     }
 
+    .comp-matrix{
+        grid-column: 3/7;
+    }
 
 }
 
