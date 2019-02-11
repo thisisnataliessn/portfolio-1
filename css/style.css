@@ -687,7 +687,7 @@ footer a {
     line-height: 125%;
 }
 
-.user-surveys p {
+.user-surveys .circle p {
     max-width: 180px;
     margin: 0 auto;
 }
@@ -914,7 +914,7 @@ footer a {
 
 
 /*desktop*/
-@media screen and (min-width: 991px) {
+@media screen and (min-width: 1000px) {
 
     .container {
         grid-column-gap: 72px;
