@@ -229,7 +229,7 @@ nav a {
     color: var(--link-color);
     text-decoration: underline;
 }
- 
+
 
 /*Footer*/
 footer {
@@ -552,7 +552,7 @@ footer a {
     grid-column: 4/span 3;
     margin-top: 2.4rem;
     width: 60%;
-  
+
 }
 
 .landing-wire-container {
@@ -562,6 +562,7 @@ footer a {
 .hi-fi-img {
     margin-bottom: 4rem;
 }
+
 .personas {
     grid-column: 1/9;
     position: relative;
@@ -690,11 +691,11 @@ footer a {
 }
 
 .title-section .prephub-intro {
-    grid-column:2/8;
-   text-align: center;
+    grid-column: 2/8;
+    text-align: center;
 }
 
-.title-section .prephub-screenshot{
+.title-section .prephub-screenshot {
     grid-column: 2/8;
 }
 
@@ -743,6 +744,7 @@ footer a {
     height: 100%;
     border: 0;
 }
+
 .wireframes {
     background-color: var(--light-blue);
     grid-column: 1/9;
@@ -764,6 +766,7 @@ footer a {
     grid-column: 3/7;
     margin-top: 2.4rem;
 }
+
 .wireframes .arrow-down {
     position: relative;
     top: 1.6rem;
@@ -869,9 +872,6 @@ footer a {
         bottom: -24%;
     }
 
-    .wireframes {
-        margin-top: 10.4rem;
-    }
 
 
     .circle {
@@ -881,25 +881,32 @@ footer a {
         padding-bottom: 2.4rem;
     }
 
-    .angela {
+    .personas .angela {
         grid-column: 2/5;
     }
 
-    .kim {
+    .personas .kim {
         grid-column: 5/8;
     }
+
     .stat-1 h3,
+    .stat-2 h3,
     .stat-3 h3 {
         padding-top: 2.4rem
     }
 
     .user-surveys .stat-1 {
         grid-column: 1/4;
+        margin-left: -4rem;
+        margin-right: 4rem;
     }
 
     .user-surveys .stat-2 {
         grid-column: 4/6;
+        margin-left: -1.6rem;
+        margin-right: -1.6rem;
     }
+
 
     .stat-2 p {
         padding-right: 2rem;
@@ -909,6 +916,12 @@ footer a {
 
     .user-surveys .stat-3 {
         grid-column: 6/9;
+        margin-left: 4rem;
+        margin-right: -4rem;
+    }
+
+    .wireframes {
+        margin-top: 10.4rem;
     }
 
     /*Bio tablet*/
@@ -994,7 +1007,7 @@ footer a {
     }
 
     /*Prephub case study desktop*/
-    
+
 
     .pref-test-1 {
         grid-template-columns: minmax(40rem, auto) auto 1.6rem auto minmax(40rem, auto);
@@ -1022,19 +1035,21 @@ footer a {
     }
 
     .roles-etc .roles {
-        grid-column:2/4;
+        grid-column: 2/4;
     }
-    
+
     .roles-etc .deliverables {
-        grid-column:4/6;
+        grid-column: 4/6;
     }
+
     .roles-etc .tools {
-        grid-column:6/8;
+        grid-column: 6/8;
     }
+
     .roles-etc hr {
         width: 20rem;
     }
- 
+
     /*Bio desktop*/
     .bio .circle {
         border-radius: 50%;
@@ -1055,6 +1070,6 @@ footer a {
 
     }
 
-    
+
 
 }
