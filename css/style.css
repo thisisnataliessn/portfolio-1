@@ -23,7 +23,6 @@
 
 }
 
-
 body {
 
     color: var(--black);
@@ -664,10 +663,6 @@ footer a {
     padding-top: 4.2rem;
 }
 
-.prephub-summary p {
-    font-size: 2.4rem;
-}
-
 .section-separator-hr {
     grid-column: 2 / 8;
     width: 100%;
@@ -677,18 +672,25 @@ footer a {
 
 .title-section {
     background-color: var(--light-blue);
-    /* height: calc(100vh-65px); */
-    text-align: center;
+    display: grid;
+    grid-template-columns: minmax(1px, auto) repeat(6, minmax(30px, 100px)) minmax(1px, auto);
+    grid-column-gap: 16px;
 }
 
 .title-section p {
-    padding-top: .8rem;
-    padding-bottom: 5.4rem;
+    padding-top: 1.6rem;
+    padding-bottom: 4.8rem;
 }
 
-.title-section .arrow-down {
-    margin-top: 4.8rem;
+.title-section .prephub-intro {
+    grid-column:2/8;
+   text-align: center;
 }
+
+.title-section .prephub-screenshot{
+    grid-column: 2/8;
+}
+
 .circles-container {
     grid-column: 2/8;
     display: grid;
