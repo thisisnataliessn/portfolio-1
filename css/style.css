@@ -247,11 +247,14 @@ footer a {
 }
 
 /* Homepage Typography*/
+.hero {
+    padding-top: 16rem;
+    padding-bottom: 16rem;
+}
 .hero h1 {
     font-size: 4.2rem;
     line-height: 125%;
     font-family: 'Lora', 'Times New Roman', serif;
-    padding-top: 160px;
 }
 
 .hero h1 span {
