@@ -720,11 +720,22 @@ footer a {
     background-color: var(--light-blue);
 }
 
-.prephub-video {
+.prephub-video-container {
     grid-column: 2 / 8;
     margin-top: 2.4rem;
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
 }
 
+.prephub-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
 .wireframes {
     background-color: var(--light-blue);
     grid-column: 1/9;
