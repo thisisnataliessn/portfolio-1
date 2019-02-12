@@ -140,6 +140,7 @@ main {
     grid-column: 2 / span 1;
     grid-row: 1 / span 1;
     justify-content: space-around
+    
 }
 
 .hero p {
@@ -255,8 +256,8 @@ footer a {
 
 /* Homepage Typography*/
 .hero {
-    padding-top: 16rem;
-    padding-bottom: 16rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
 }
 
 .hero h1 {
@@ -852,6 +853,11 @@ footer a {
     }
 
     /*Homepage tablet*/
+    .hero {
+        padding-top: 12rem;
+        padding-bottom: 16rem;
+    }
+    
     .hero h1 {
         line-height: 120%;
     }
@@ -1007,6 +1013,10 @@ footer a {
 
     .hero p {
         font-size: 3.2rem;
+    }
+
+    .hero {
+        padding-top: 16rem;
     }
 
     /*Prephub case study desktop*/
