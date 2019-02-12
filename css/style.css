@@ -152,7 +152,7 @@ main {
     margin: 16rem 50% 8rem 50%;
 }
 
-.prephub {
+.project {
     background-color: var(--light-blue);
     grid-row: 2 / span 1;
     grid-column: 1 /span 8;
@@ -163,7 +163,6 @@ main {
     text-align: center;
 }
 
-
 .prephub-screenshot {
     padding-top: 42px;
     height: auto;
@@ -171,10 +170,60 @@ main {
     max-width: 700px;
 }
 
-.prephub hr {
+.project hr {
     text-align: center;
     margin: .8rem auto;
 }
+
+.hero {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+.hero h1 {
+    font-size: 4.2rem;
+    line-height: 125%;
+    font-family: 'Lora', 'Times New Roman', serif;
+}
+
+.hero h1 span {
+    color: var(--purple);
+}
+
+.hero p {
+    font-size: 2.4rem;
+    padding-top: 8rem;
+}
+
+.project h1 {
+    font-size: 3.2rem;
+    line-height: 125%;
+    padding-top: 4.2rem;
+    font-weight: 500;
+    color: var(--black);
+}
+
+.project h2 {
+    font-family: "Lora", "Times New Roman", serif;
+    font-size: 3.2rem;
+    line-height: 125%;
+    padding-top: 1.8rem;
+    font-weight: 500;
+    color: var(--black);
+}
+
+.project p {
+    font-size: 2rem;
+    padding-top: 1.8rem;
+    padding-bottom: 4.2rem;
+    font-weight: 500;
+    color: var(--black);
+}
+
+.busybus {
+    background-color: var(--light-orange);
+}
+
 
 
 /* Nav */
@@ -254,51 +303,6 @@ footer a {
     color: var(--black);
 }
 
-/* Homepage Typography*/
-.hero {
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-}
-
-.hero h1 {
-    font-size: 4.2rem;
-    line-height: 125%;
-    font-family: 'Lora', 'Times New Roman', serif;
-}
-
-.hero h1 span {
-    color: var(--purple);
-}
-
-.hero p {
-    font-size: 2.4rem;
-    padding-top: 8rem;
-}
-
-.prephub h1 {
-    font-size: 3.2rem;
-    line-height: 125%;
-    padding-top: 4.2rem;
-    font-weight: 500;
-    color: var(--black);
-}
-
-.prephub h2 {
-    font-family: "Lora", "Times New Roman", serif;
-    font-size: 3.2rem;
-    line-height: 125%;
-    padding-top: 1.8rem;
-    font-weight: 500;
-    color: var(--black);
-}
-
-.prephub p {
-    font-size: 2rem;
-    padding-top: 1.8rem;
-    padding-bottom: 4.2rem;
-    font-weight: 500;
-    color: var(--black);
-}
 
 /*PrepHub case study*/
 .case-study h2 {
@@ -689,9 +693,11 @@ footer a {
 .title-section p {
     padding-top: 1.6rem;
     padding-bottom: 4.8rem;
+    font-size: 2.4rem;
+    line-height: 125%;
 }
 
-.title-section .prephub-intro {
+.title-section .study-intro {
     grid-column: 2/8;
     text-align: center;
 }
@@ -699,8 +705,6 @@ footer a {
 .title-section .prephub-screenshot {
     grid-column: 2/8;
 }
-
-
 
 .user-surveys h3 {
     font-size: 4.8rem;
@@ -774,6 +778,15 @@ footer a {
     left: 50%;
 }
 
+/*BusyBus Case Study*/
+
+.title-section .busybus-screenshot {
+    grid-column: 3/7;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
 /*Bio Page*/
 
 .bio-container {
@@ -830,7 +843,7 @@ footer a {
 
 
 /*tablet*/
-@media screen and (min-width:575px) {
+@media screen and (min-width:768px) {
 
 
     .logo {
@@ -862,9 +875,14 @@ footer a {
         line-height: 120%;
     }
 
-    .prephub {
+    .project{
         padding-left: 60px;
         padding-right: 60px;
+    }
+    
+    .project h2 {
+        max-width: 50rem;
+        margin: 0 auto;
     }
 
     /*PrepHub case study tablet*/
@@ -877,8 +895,6 @@ footer a {
         position: absolute;
         bottom: -24%;
     }
-
-
 
     .circle {
         border-radius: 50%;
@@ -928,6 +944,11 @@ footer a {
 
     .wireframes {
         margin-top: 10.4rem;
+    }
+
+    /*Busybus case study tablet*/
+    .title-section .busybus-screenshot {
+        width: 50%;       
     }
 
     /*Bio tablet*/
@@ -1002,7 +1023,7 @@ footer a {
         display: grid;
     }
 
-    .prephub {
+    .project {
         padding-top: 8.0rem;
     }
 
@@ -1020,8 +1041,6 @@ footer a {
     }
 
     /*Prephub case study desktop*/
-
-
     .pref-test-1 {
         grid-template-columns: minmax(40rem, auto) auto 1.6rem auto minmax(40rem, auto);
         grid-gap: 0px;
