@@ -12,7 +12,7 @@
     --light-blue: #F2F5FA;
     --black: #121213;
 }
-
+/* 
 .arrow-down {
     border: solid var(--black);
     border-width: 0 3px 3px 0;
@@ -21,7 +21,7 @@
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
 
-}
+} */
 
 body {
 
@@ -195,6 +195,10 @@ main {
     padding-top: 8rem;
 }
 
+.hero a:hover {
+    text-transform: uppercase;
+}
+
 .project h1 {
     font-size: 3.2rem;
     line-height: 125%;
@@ -248,7 +252,7 @@ nav li {
 
 nav li a:hover {
     color: var(--link-color);
-    text-decoration: underline;
+    text-transform: uppercase;
 }
 
 nav a {
@@ -277,7 +281,7 @@ nav a {
 
 .name:hover {
     color: var(--link-color);
-    text-decoration: underline;
+    text-transform: uppercase;
 }
 
 
@@ -302,9 +306,17 @@ footer li {
 footer a {
     color: var(--black);
 }
+footer a:hover{
+    color: var(--link);
+}
+
+footer a:hover {
+    color: var(--link-color);
+    font-size: 3.2rem;
+}
 
 
-/*PrepHub case study*/
+/*PrepHub case study main classes*/
 .case-study h2 {
     font-family: "Lora", "Times New Roman", serif;
     line-height: 2.8rem;
@@ -378,6 +390,7 @@ footer a {
     display: grid;
     grid-template-columns: minmax(1px, auto) repeat(6, minmax(30px, 100px)) minmax(1px, auto);
     grid-column-gap: 16px;
+    padding-top: 1.6rem;
 }
 
 .branding-details-container p {
@@ -447,7 +460,7 @@ footer a {
 .frustrations {
     background-color: var(--gray-white);
     border-radius: 5rem;
-    margin-top: 1.8rem;
+    margin-bottom: 3.2rem;
     padding: 2.4rem 3.2rem;
 }
 
@@ -541,7 +554,7 @@ footer a {
     background-color: var(--light-orange);
     grid-column: 1/9;
     padding-bottom: 2.4rem;
-    padding-top: 1.8rem;
+    padding-top: 2.4rem;
     display: grid;
     grid-template-columns: minmax(1px, auto) repeat(6, minmax(30px, 100px)) minmax(1px, auto);
     grid-column-gap: 16px;
@@ -679,7 +692,7 @@ footer a {
 .section-separator-hr {
     grid-column: 2 / 8;
     width: 100%;
-    margin-top: 4.8rem;
+    margin-top: 5.6rem;
     height: 4px
 }
 
@@ -706,6 +719,9 @@ footer a {
     grid-column: 2/8;
 }
 
+.user-surveys .circles-container {
+    padding-bottom:4.8rem;
+}
 .user-surveys h3 {
     font-size: 4.8rem;
 }
@@ -762,21 +778,25 @@ footer a {
 
 .wireframes h2,
 .wireframes hr,
-.wireframes p,
+.wireframes .wf-text,
 .wireframes ul {
     grid-column: 2 / 8;
 }
 
 .wireframes .button {
     grid-column: 3/7;
-    margin-top: 2.4rem;
+    margin-top: 4.8rem;
+    margin-bottom:2.4rem;
 }
 
 .wireframes .arrow-down {
-    position: relative;
-    top: 1.6rem;
-    left: 50%;
+    grid-column: 4/6;
+    margin: 0 auto;
+    padding-top: 3.2rem;
+    font-weight: 700;
+    font-size: 4.2rem;
 }
+
 
 /*BusyBus Case Study*/
 
@@ -788,6 +808,11 @@ footer a {
 
 
 /*Bio Page*/
+
+.bio a:hover {
+    text-transform: uppercase;
+}
+
 
 .bio-container {
     display: grid;
@@ -888,9 +913,12 @@ footer a {
     /*PrepHub case study tablet*/
     .branding-intro-container p {
         position: absolute;
-        bottom: 0%;
+        bottom: -24%;
     }
 
+    .branding-details-container {
+        margin-top:8rem;
+    }
     .flow-summary {
         position: absolute;
         bottom: -24%;
