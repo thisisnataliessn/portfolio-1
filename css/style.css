@@ -12,16 +12,8 @@
     --light-blue: #F2F5FA;
     --black: #121213;
 }
-/* 
-.arrow-down {
-    border: solid var(--black);
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 3px;
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
 
-} */
+
 
 body {
 
@@ -140,7 +132,6 @@ main {
     grid-column: 2 / span 1;
     grid-row: 1 / span 1;
     justify-content: space-around
-    
 }
 
 .hero p {
@@ -274,7 +265,7 @@ nav a {
 }
 
 .logo {
-    position: absolute;
+    position: fixed;
     top: .6rem;
     padding-left: 1.6rem;
 }
@@ -284,6 +275,10 @@ nav a {
     text-transform: uppercase;
 }
 
+
+.container .nav-next-project {
+    display: none;
+}
 
 /*Footer*/
 footer {
@@ -306,7 +301,8 @@ footer li {
 footer a {
     color: var(--black);
 }
-footer a:hover{
+
+footer a:hover {
     color: var(--link);
 }
 
@@ -316,7 +312,7 @@ footer a:hover {
 }
 
 
-/*PrepHub case study main classes*/
+/*Case study main classes*/
 .case-study h2 {
     font-family: "Lora", "Times New Roman", serif;
     line-height: 2.8rem;
@@ -334,6 +330,7 @@ footer a:hover {
     line-height: 2.8rem;
     margin-left: 1.6rem;
 }
+
 
 .headline {
     grid-column: 2 / 8;
@@ -720,8 +717,9 @@ footer a:hover {
 }
 
 .user-surveys .circles-container {
-    padding-bottom:4.8rem;
+    padding-bottom: 4.8rem;
 }
+
 .user-surveys h3 {
     font-size: 4.8rem;
 }
@@ -786,7 +784,7 @@ footer a:hover {
 .wireframes .button {
     grid-column: 3/7;
     margin-top: 4.8rem;
-    margin-bottom:2.4rem;
+    margin-bottom: 2.4rem;
 }
 
 .wireframes .arrow-down {
@@ -885,9 +883,28 @@ footer a:hover {
     }
 
     footer {
-
-
         padding-right: 60px
+    }
+
+   .container .nav-next-project {
+        display: block;  
+    } 
+
+
+
+ .fa-arrow-right:hover{
+        color: #ffffff;
+        background-color: var(--link-color);
+        border-radius:50%;
+    }
+
+ 
+    .fa-arrow-right {
+        font-size: 3.2rem;
+        border-radius: 100%;
+        padding:.8rem;
+      
+        display: inline block;
     }
 
     /*Homepage tablet*/
@@ -895,16 +912,16 @@ footer a:hover {
         padding-top: 12rem;
         padding-bottom: 16rem;
     }
-    
+
     .hero h1 {
         line-height: 120%;
     }
 
-    .project{
+    .project {
         padding-left: 60px;
         padding-right: 60px;
     }
-    
+
     .project h2 {
         max-width: 50rem;
         margin: 0 auto;
@@ -917,8 +934,9 @@ footer a:hover {
     }
 
     .branding-details-container {
-        margin-top:8rem;
+        margin-top: 8rem;
     }
+
     .flow-summary {
         position: absolute;
         bottom: -24%;
@@ -976,7 +994,7 @@ footer a:hover {
 
     /*Busybus case study tablet*/
     .title-section .busybus-screenshot {
-        width: 50%;       
+        width: 50%;
     }
 
     /*Bio tablet*/
@@ -1017,7 +1035,7 @@ footer a:hover {
 
     }
 
-    .comp-matrix{
+    .comp-matrix {
         grid-column: 3/7;
     }
 
@@ -1030,6 +1048,10 @@ footer a:hover {
     .container {
         grid-column-gap: 72px;
     }
+
+.container .nav-next-project {
+    right: 7.2rem;
+}
 
     .name {
         left: 160px;
