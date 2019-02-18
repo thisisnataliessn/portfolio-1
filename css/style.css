@@ -69,15 +69,16 @@ hr {
     margin-bottom: 1.6rem;
 }
 
+li b,
 p b {
     font-weight: 700;
     color: var(--purple);
 }
 
-.black-bold {
+/* .black-bold {
     font-weight: 700;
     color: var(--black);
-}
+} */
 
 .shadow {
     box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.15);
@@ -496,11 +497,11 @@ footer a:hover {
     padding: 2.4rem 3.2rem;
 }
 
-/* .frustrations span {
+.frustrations span {
     color: var(--purple);
     font-weight: 700;
-} */
-
+}
+/* 
 .frustrations ul {
     list-style: none;
 }
@@ -510,7 +511,7 @@ footer a:hover {
     font-size: 2.4rem;
     color: var(--purple);
     padding-right: 1rem;
-}
+} */
 
 
 .hi-fi-img {
