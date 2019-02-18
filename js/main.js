@@ -1,4 +1,3 @@
-
 //   //Initiate carousel
 // $('.main-carousel').flickity({
 //     // options
@@ -12,7 +11,7 @@
 
 //   $arrow.on('mouseover', function() {
 //     $(".next-project").show();
-  
+
 //   // $arrow.on('mouseout', function() {
 //   //     $(".next-project").show();
 
@@ -20,40 +19,38 @@
 // });
 
 
-  // Find all YouTube videos
+// Find all YouTube videos
 var $allVideos = $("iframe[src^='//www.youtube.com']"),
 
-// The element that is fluid width
-$fluidEl = $(".main-topics");
+  // The element that is fluid width
+  $fluidEl = $(".main-topics");
 
 // Figure out and save aspect ratio for each video
-$allVideos.each(function() {
+$allVideos.each(function () {
 
-$(this)
-.data('aspectRatio', this.height / this.width)
+  $(this)
+    .data('aspectRatio', this.height / this.width)
 
-// and remove the hard coded width/height
-.removeAttr('height')
-.removeAttr('width');
+    // and remove the hard coded width/height
+    .removeAttr('height')
+    .removeAttr('width');
 
 });
 
 // When the window is resized
-$(window).resize(function() {
+$(window).resize(function () {
 
-var newWidth = $fluidEl.width();
+  var newWidth = $fluidEl.width();
 
-// Resize all videos according to their own aspect ratio
-$allVideos.each(function() {
+  // Resize all videos according to their own aspect ratio
+  $allVideos.each(function () {
 
-var $el = $(this);
-$el
-  .width(newWidth)
-  .height(newWidth * $el.data('aspectRatio'));
+    var $el = $(this);
+    $el
+      .width(newWidth)
+      .height(newWidth * $el.data('aspectRatio'));
 
-});
+  });
 
-// Kick off one resize to fix all videos on page load
+  // Kick off one resize to fix all videos on page load
 }).resize();
-
-
