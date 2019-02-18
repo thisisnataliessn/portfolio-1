@@ -886,26 +886,22 @@ footer a:hover {
         padding-right: 60px
     }
 
-   .container .nav-next-project {
+   /* .container .nav-next-project {
         display: block;  
     } 
-
-
 
  .fa-arrow-right:hover{
         color: #ffffff;
         background-color: var(--link-color);
         border-radius:50%;
     }
-
  
     .fa-arrow-right {
         font-size: 3.2rem;
         border-radius: 100%;
         padding:.8rem;
-      
         display: inline block;
-    }
+    } */
 
     /*Homepage tablet*/
     .hero {
