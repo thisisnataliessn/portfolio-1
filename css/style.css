@@ -311,7 +311,7 @@ footer {
 footer ul {
     position: absolute;
     top: 3rem;
-    right:1.6rem;
+    right: 1.6rem;
 
 }
 
@@ -320,11 +320,12 @@ footer p {
     position: absolute;
     left: 1.6rem;
 }
+
 footer li {
     display: inline;
     padding: 8px;
     opacity: .7;
-   
+
 }
 
 footer a {
@@ -501,6 +502,7 @@ footer a:hover {
     color: var(--purple);
     font-weight: 700;
 }
+
 /* 
 .frustrations ul {
     list-style: none;
@@ -581,7 +583,7 @@ footer a:hover {
 }
 
 .letter {
-    
+
     padding-left: 4rem;
 }
 
@@ -774,7 +776,7 @@ footer a:hover {
 
 .user-surveys h3 {
     font-size: 4.8rem;
-   
+
 }
 
 .user-surveys h4 {
@@ -944,9 +946,9 @@ footer a:hover {
         position: absolute;
         top: 3rem;
         right: 6rem;
-    
+
     }
-    
+
     footer p {
         display: block;
         position: absolute;
@@ -1125,8 +1127,13 @@ footer a:hover {
         right: 72px;
     }
 
-    footer {
-        padding-right: 72px
+
+    footer ul {
+        right: 7.2rem;
+    }
+
+    footer p {
+        left: 7.2rem;
     }
 
     /*Homepage*/
