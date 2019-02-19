@@ -149,7 +149,7 @@ main {
 }
 
 
-a:hover:before {
+.hero a:hover:before {
     height: .8rem;
 } 
 
@@ -161,14 +161,9 @@ a:hover:before {
 }
 
 
-/* .hero .arrow-down {
-    grid-column: 2;
-    margin: 0 auto;
-} */
-
-.chevron {
+/* .chevron {
     margin: 16rem 50% 8rem 50%;
-}
+} */
 
 .project {
     background-color: var(--light-blue);
@@ -186,6 +181,12 @@ a:hover:before {
     height: auto;
     width: 100%;
     max-width: 700px;
+}
+
+.busybus-screenshot {
+    height: auto;
+   max-height: 50rem;
+   width: auto;
 }
 
 .project hr {
@@ -287,12 +288,14 @@ nav a {
 
 .name {
     visibility: hidden;
+    display: inline-block;
+    width: 20rem;
     position: absolute;
-    top: 26px;
-    left: 100px;
+    top: 20px;
+    left: 80px;
     font-size: 2.4rem;
     /* font-weight: 500; */
-    margin-left: -.8rem;
+
 
 }
 
@@ -850,9 +853,8 @@ footer a:hover {
 /*BusyBus Case Study*/
 
 .title-section .busybus-screenshot {
-    grid-column: 3/7;
-    width: 100%;
-    margin: 0 auto;
+    grid-column: 1/9;
+    margin: 1.6rem auto;
 }
 
 
@@ -1053,9 +1055,7 @@ footer a:hover {
     }
 
     /*Busybus case study tablet*/
-    .title-section .busybus-screenshot {
-        width: 50%;
-    }
+
 
     /*Bio tablet*/
     .bio .circle {
