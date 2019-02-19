@@ -60,7 +60,7 @@ a:before {
 
 .circle {
     background-color: var(--light-green);
-    border-radius: 50%;
+    border-radius: 3rem;
     grid-column: 3/7;
     margin-top: 1.6rem;
     padding-top: 5.6rem;
@@ -83,6 +83,11 @@ hr {
     text-align: left;
     margin: 0 auto 0 0;
     margin-bottom: 1.6rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 li b,
@@ -666,7 +671,7 @@ footer a:hover {
 
 .persona {
     border: 3px dotted var(--purple);
-    border-radius: 10%;
+    border-radius: 3rem;
     grid-column: 3/7;
     margin-bottom: 2.4rem;
     padding: 3.2rem 1rem 3.2rem 1rem;
@@ -883,10 +888,8 @@ footer a:hover {
 .bio-title-section p {
     font-size: 2.4rem;
     margin: 0 auto;
-    max-width: 55rem;
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-top: 2.4rem;
+    max-width: 60rem;
+
 }
 
 .bio a:hover:before {
@@ -896,7 +899,7 @@ footer a:hover {
 .bio .circle {
     grid-column: 1/9;
     text-align: left;
-    border-radius: 10%;
+    border-radius: 3rem;
     padding: 4rem 1.6rem;
 }
 
@@ -1005,7 +1008,7 @@ footer a:hover {
     }
 
     .circle {
-        border-radius: 50%;
+        border-radius: 3rem;
         margin-top: 0rem;
         padding-top: 2.4rem;
         padding-bottom: 2.4rem;
@@ -1058,6 +1061,27 @@ footer a:hover {
 
 
     /*Bio tablet*/
+    .bio-title-section {
+    
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+
+        max-width: 90%;
+        margin: auto;
+        padding: 8rem 0;
+    }
+
+    .bio-title-section p {
+        font-size: 3.2rem;
+        grid-column: 1;
+        grid-row: 1;
+        text-align: left; 
+        margin-right: 0rem;
+        max-width: 40rem;
+        padding-right: 1.6rem;
+    }
+
     .bio .circle {
         max-width: 50rem;
         margin: 0 .8rem;
@@ -1077,6 +1101,10 @@ footer a:hover {
         grid-gap: 0px;
     }
 
+    .headshot {
+        width: 100%;
+        grid-column: 2;
+    }
     .circles-container .love-1 {
         grid-column: 2/3;
     }
@@ -1178,8 +1206,13 @@ footer a:hover {
     }
 
     /*Bio desktop*/
+  
+    .bio-title-section p {
+        font-size: 4.8rem;
+        max-width: 50rem;
+    }
     .bio .circle {
-        border-radius: 50%;
+        /* border-radius: 1rem; */
         padding-top: 12rem;
         padding-bottom: 12rem;
         margin-top: 0rem;
