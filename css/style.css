@@ -244,6 +244,10 @@ nav {
     border-bottom: 3px solid var(--purple);
     font-size: 1.6rem;
     position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.6rem;
     top: 0;
     z-index: 5;
 }
@@ -275,17 +279,7 @@ nav a {
     left: 100px;
 }
 
-.nav-links {
-    position: absolute;
-    top: 30px;
-    right: 16px;
-}
 
-.logo {
-    position: fixed;
-    top: .6rem;
-    padding-left: 1.6rem;
-}
 
 .name:hover {
     color: var(--link-color);
@@ -928,18 +922,11 @@ footer a:hover {
 @media screen and (min-width:768px) {
 
 
-    .logo {
-        padding-left: 60px;
-    }
 
     .name {
         visibility: visible;
-        left: 142px;
     }
 
-    .nav-links {
-        right: 60px;
-    }
 
 
     footer ul {
@@ -1118,14 +1105,6 @@ footer a:hover {
     /* .container .nav-next-project {
     right: 7.2rem;
 } */
-
-    .name {
-        left: 160px;
-    }
-
-    .nav-links {
-        right: 72px;
-    }
 
 
     footer ul {
