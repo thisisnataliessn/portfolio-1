@@ -889,7 +889,7 @@ footer a:hover {
     font-size: 2.4rem;
     margin: 0 auto;
     max-width: 60rem;
-
+padding-top: 1.6rem;
 }
 
 .bio a:hover:before {
@@ -1089,16 +1089,14 @@ footer a:hover {
         padding-right: 4rem;
     }
 
-    .bio .circle h3 {
-        text-align: center;
-    }
+ 
 
     .bio .circles-container {
         grid-column: 1/9;
         display: grid;
-        grid-template-columns: minmax(40px, 72px) auto auto auto minmax(40px, 72px);
+        grid-template-columns: minmax(40px, 72px) auto 1.6rem auto minmax(40px, 72px);
         grid-template-rows: auto;
-        grid-gap: 0px;
+        grid-gap: 1.6rem;
     }
 
     .headshot {
@@ -1107,6 +1105,7 @@ footer a:hover {
     }
     .circles-container .love-1 {
         grid-column: 2/3;
+        justify-self: end;
     }
 
 
@@ -1211,8 +1210,9 @@ footer a:hover {
         font-size: 4.8rem;
         max-width: 50rem;
     }
-    .bio .circle {
-        /* border-radius: 1rem; */
+
+    /* .bio .circle {
+     
         padding-top: 12rem;
         padding-bottom: 12rem;
         margin-top: 0rem;
@@ -1228,7 +1228,7 @@ footer a:hover {
         padding-right: 4rem;
         padding-top: 12rem;
 
-    }
+    } */
 
 
 
