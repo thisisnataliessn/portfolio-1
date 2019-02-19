@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    /* outline: 1px solid red; */
 }
 
 /*GLOBAL COLORS*/
@@ -40,7 +41,22 @@ a {
     color: var(--link-color);
     font-weight: 700;
     text-decoration: none;
+    position: relative;
 }
+
+a:before {
+    content: "";
+    width: 100%;
+    height: 0;
+    background: #D4E3DE;
+    position: absolute;
+    /* left: -.4rem; */
+    bottom: -.4rem;
+    z-index: -1;
+    transition: .4s all;
+}
+
+
 
 .circle {
     background-color: var(--light-green);
@@ -126,32 +142,29 @@ main {
 
 .hero {
     grid-column: 1 /span 8;
-    grid-row: 1 / span 1;
-    padding-left: 16px;
-    padding-right: 16px;
     display: grid;
-    grid-template-columns: minmax(16px, auto) fit-content(1000px) minmax(16px, auto);
-    grid-template-rows: repeat(3, auto);
+    grid-template-columns: minmax(1.6rem, auto) 1fr minmax(1.6rem, auto) ;
+    max-width: 70rem;
+    margin: auto;
 }
 
-.hero h1 {
-    grid-column: 2 / span 1;
-    justify-content: space-around
-}
 
+a:hover:before {
+    height: .8rem;
+} 
+
+.hero h1,
+.hero p,
 .hero h2 {
-    grid-column: 2 / span 1;
-    justify-content: space-around
+    max-width: 64rem;
+    grid-column: 2;
 }
 
-.hero p {
-    grid-column: 2 / span 1;
-}
 
-.hero .arrow-down {
+/* .hero .arrow-down {
     grid-column: 2;
     margin: 0 auto;
-}
+} */
 
 .chevron {
     margin: 16rem 50% 8rem 50%;
@@ -203,9 +216,6 @@ main {
     padding-top: 8rem;
 }
 
-.hero a:hover {
-    text-transform: uppercase;
-}
 
 .project h1 {
     font-size: 3.2rem;
@@ -254,7 +264,7 @@ nav {
 
 nav ul {
     list-style-type: none;
-    overflow: hidden;
+
 }
 
 nav li {
@@ -262,9 +272,13 @@ nav li {
     padding-left: 32px;
 }
 
-nav li a:hover {
-    color: var(--link-color);
-    text-transform: uppercase;
+nav li a:hover:before {
+    height: .6rem;
+}
+
+nav .logo {
+    display: inline;
+    width: 25rem;
 }
 
 nav a {
@@ -275,18 +289,17 @@ nav a {
 .name {
     visibility: hidden;
     position: absolute;
-    top: 30px;
+    top: 26px;
     left: 100px;
+    font-size: 2.4rem;
+    /* font-weight: 500; */
+    margin-left: -.8rem;
+
 }
 
-
-
-.name:hover {
-    color: var(--link-color);
-    text-transform: uppercase;
+.name a:hover {
+    color: var(--black);
 }
-
-
 
 
 /*Footer*/
@@ -497,17 +510,7 @@ footer a:hover {
     font-weight: 700;
 }
 
-/* 
-.frustrations ul {
-    list-style: none;
-}
 
-.frustrations ul li::before {
-    content: "\2022";
-    font-size: 2.4rem;
-    color: var(--purple);
-    padding-right: 1rem;
-} */
 
 
 .hi-fi-img {
@@ -856,8 +859,8 @@ footer a:hover {
 
 /*Bio Page*/
 
-.bio a:hover {
-    text-transform: uppercase;
+.bio a:hover:before {
+    height: 1.8rem;
 }
 
 
@@ -885,6 +888,9 @@ footer a:hover {
     padding-top: 2.4rem;
 }
 
+.bio a:hover:before {
+    height: .8rem;
+}
 
 .bio .circle {
     grid-column: 1/9;
@@ -927,7 +933,9 @@ footer a:hover {
         visibility: visible;
     }
 
-
+    .hero h1 {
+        font-size: 7.2rem;
+    }
 
     footer ul {
         position: absolute;
@@ -961,8 +969,8 @@ footer a:hover {
 
     /*Homepage tablet*/
     .hero {
-        padding-top: 12rem;
-        padding-bottom: 12rem;
+        padding-top: 8rem;
+        padding-bottom: 8rem;
     }
 
     .hero h1 {
@@ -1115,28 +1123,14 @@ footer a:hover {
         left: 7.2rem;
     }
 
-    /*Homepage*/
+    /*Homepage esktop*/
 
     .project {
         padding-top: 8.0rem;
     }
 
-    .hero h1 {
-        font-size: 7.2rem;
-        line-height: 120%;
-    }
-
     .hero h2 {
-        font-size: 5.6rem;
-    }
-
-    .hero p {
-        font-size: 3.2rem;
-
-    }
-
-    .hero {
-        padding-top: 8rem;
+        font-size: 4.8rem;
     }
 
     /*Prephub case study desktop*/
