@@ -14,7 +14,6 @@
     --black: #121213;
 }
 
-
 body {
 
     color: var(--black);
@@ -33,7 +32,7 @@ html {
 
 p {
     font-size: 1.8rem;
-    line-height: 125%;
+    line-height: 1.5;
     padding-bottom: 1.6rem;
 }
 
@@ -56,7 +55,9 @@ a::before {
     transition: .4s all;
 }
 
-
+/* nav.active li {
+    background-color: #CBC0E3;
+} */
 
 .circle {
     background-color: var(--light-green);
@@ -82,7 +83,7 @@ hr {
     /* background-color: var(--purple); */
     text-align: left;
     margin: 0 auto 0 0;
-    margin-bottom: 1.6rem;
+    /* margin-bottom: 1.6rem; */
 }
 
 img {
@@ -226,8 +227,9 @@ main {
 
 .project h1 {
     font-size: 3.2rem;
-    line-height: 125%;
+    line-height: 1.5;
     padding-top: 4.2rem;
+   
     font-weight: 500;
     color: var(--black);
     border-bottom: 3px solid var(--purple);
@@ -240,12 +242,13 @@ main {
     font-size: 3.2rem;
     line-height: 125%;
     font-weight: 500;
+    padding-top: 1.6rem;
     color: var(--black);
 }
 
 .project p {
     font-size: 2rem;
-    padding-top: 1.8rem;
+    padding-top: 1.6rem;
     padding-bottom: 4.2rem;
     font-weight: 500;
     color: var(--black);
@@ -384,7 +387,7 @@ footer a:hover {
 .case-study li,
 .case-study p {
     font-size: 1.8rem;
-    line-height: 2.8rem;
+    line-height: 1.5;
     /* margin-left: 1.6rem; */
 }
 
@@ -404,8 +407,8 @@ footer a:hover {
     line-height: 1.3;
     max-width: 32rem;
     border-bottom: .3rem solid var(--purple);
- 
     padding-bottom: .8rem;
+    margin-bottom: .8rem;
     font-size: 2.4rem;
     text-transform: uppercase;
     font-family: "Lora", "Times New Roman", serif;
@@ -421,7 +424,7 @@ footer a:hover {
     grid-column: 2/7;
     font-size: 4rem;
     margin-top: 1rem;
-    margin-bottom: 1.6rem;
+    margin-bottom: 4.8rem;
 }
 
 /* Case Study sections */
@@ -533,6 +536,7 @@ footer a:hover {
     color: var(--purple);
     font-weight: 700;
 }
+
 
 
 
@@ -714,6 +718,7 @@ footer a:hover {
     grid-column: 2/8;
 }
 
+
 .pref-test-1 {
     position: relative;
     background-color: var(--light-green);
@@ -764,7 +769,7 @@ footer a:hover {
     grid-column: 2 / 8;
     background-color: var(--purple);
     width: 100%;
-    margin-top: 5.6rem;
+    margin-top: 15rem;
     height: 4px
 }
 
@@ -892,7 +897,7 @@ footer a:hover {
 }
 
 .bio-section p {
-    line-height: 2.8rem;
+    line-height: 1.5;
     /* margin-left: 1.6rem; */
 }
 
@@ -909,8 +914,17 @@ footer a:hover {
 padding-top: 1.6rem;
 }
 
-/* .bio a:hover::before{ 
-   height: .8rem;
+.bio a:hover::before{ 
+   height: .6rem;
+   z-index: 1;
+}
+
+/* .bio a{
+    transition: 5s all;
+}
+
+.bio a:hover{
+    padding-bottom: 3px solid #A1C1B6;
 } */
 
 .link-hover:hover::before{
@@ -925,7 +939,7 @@ padding-top: 1.6rem;
 }
 
 .bio .circle p {
-    line-height: 2.8rem;
+    line-height: 1.5;
     margin-top: 1.6rem;
 }
 
