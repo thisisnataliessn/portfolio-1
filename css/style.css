@@ -909,11 +909,12 @@ footer a:hover {
 padding-top: 1.6rem;
 }
 
-.bio a {
-    transition: .5s all;
-}
-.bio a:hover::before{ 
+/* .bio a:hover::before{ 
    height: .8rem;
+} */
+
+.link-hover:hover::before{
+    height: .8rem;
 }
 
 .bio .circle {
