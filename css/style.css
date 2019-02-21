@@ -131,12 +131,12 @@ p b {
 
 
 /*CSS Grid + layout - mobile first*/
-.container {
+/* .container {
     display: grid;
     grid-template-rows: 85px auto;
     grid-template-columns: minmax(16px, auto) repeat(6, minmax(30px, 100px)) minmax(16px, auto);
     grid-column-gap: 16px;
-}
+} */
 
 nav {
     grid-row: 1 / span 1;
@@ -995,7 +995,16 @@ footer a:hover {
     background-color: var(--light-blue);
 }
 
+/*Contact screen*/
+.contact {
+    grid-column: 2/8;
+    margin: 0 auto;
 
+}
+.contact-intro h1 {
+    font-family: "Lora", "Times New Roman", serif;
+    font-size: 4.2rem;
+}
 /*tablet*/
 @media screen and (min-width:768px) {
 
@@ -1022,22 +1031,6 @@ footer a:hover {
         left: 6rem;
     }
 
-    /* .container .nav-next-project {
-        display: block;
-    }
-
- .fa-arrow-right:hover{
-        color: #ffffff;
-        background-color: var(--link-color);
-        border-radius:50%;
-    }
-
-    .fa-arrow-right {
-        font-size: 3.2rem;
-        border-radius: 100%;
-        padding:.8rem;
-        display: inline block;
-    } */
 
     /*Homepage tablet*/
     .hero {
