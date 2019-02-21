@@ -934,8 +934,9 @@ footer a:hover {
 .bio-title-section p {
     font-size: 2.4rem;
     margin: 0 auto;
-    max-width: 60rem;
+    max-width: 40rem;
     padding-top: 1.6rem;
+    line-height: 1.25;
 }
 
 .bio a:hover::before {
