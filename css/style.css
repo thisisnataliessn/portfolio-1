@@ -34,7 +34,7 @@ p {
     font-size: 1.8rem;
     line-height: 1.5;
     padding-top: .8rem;
-    padding-bottom: 1.6rem;
+    padding-bottom: 2.4rem;
 }
 
 a {
@@ -105,6 +105,7 @@ p b {
 
 .shadow {
     box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.15);
+
 }
 
 /* Need to make these open in new tab when they go external */
@@ -151,7 +152,7 @@ main {
 .hero {
     grid-column: 1 /span 8;
     display: grid;
-    grid-template-columns: minmax(1.6rem, auto) 1fr minmax(1.6rem, auto) ;
+    grid-template-columns: minmax(1.6rem, auto) 1fr minmax(1.6rem, auto);
     max-width: 70rem;
     margin: auto;
 }
@@ -159,7 +160,7 @@ main {
 
 .hero a:hover::before {
     height: .8rem;
-} 
+}
 
 .hero h1,
 .hero p,
@@ -193,8 +194,8 @@ main {
 
 .busybus-screenshot {
     height: auto;
-   max-height: 50rem;
-   width: auto;
+    max-height: 50rem;
+    width: auto;
 }
 
 .project hr {
@@ -230,7 +231,7 @@ main {
     font-size: 3.2rem;
     line-height: 1.5;
     padding-top: 4.2rem;
-   
+
     font-weight: 500;
     color: var(--black);
     border-bottom: 3px solid var(--purple);
@@ -263,7 +264,7 @@ main {
 
 /* Nav */
 nav {
-    background-color: rgba(255,255,255, .97);
+    background-color: rgba(255, 255, 255, .97);
     border-bottom: 3px solid var(--gray-white);
     font-size: 1.6rem;
     position: sticky;
@@ -284,7 +285,7 @@ nav li {
     display: inline-block;
     min-width: 6rem;
     text-align: center;
-    
+
 }
 
 nav li a:hover:before {
@@ -403,7 +404,6 @@ footer a:hover {
     grid-column: 2 / 8;
     padding-top: 5.6rem;
     padding-bottom: 4rem
-
 }
 
 .headline h2 {
@@ -488,9 +488,13 @@ footer a:hover {
 .comp-matrix {
     grid-column: 2/8;
     justify-content: space-around;
-    margin-bottom: 1.6rem;
+    border-bottom: solid .6rem var(--purple);
+    border-radius: 1rem;
+    margin-bottom: 2.4rem;
+    margin-top: 1.6rem;
     width: 100%;
     height: auto;
+    padding: 1.6rem;
 }
 
 .conc {
@@ -507,6 +511,7 @@ footer a:hover {
     margin-top: 2.4rem;
     width: 100%;
     height: auto;
+   
 }
 
 .flow-container {
@@ -518,8 +523,8 @@ footer a:hover {
     background-color: var(--light-green);
     border-radius: 3rem;
     margin: 1rem 2rem 0 2rem;
-    padding-left:3.2rem;
-    padding-right:3.2rem;
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
     padding-top: .8rem;
 }
 
@@ -546,10 +551,12 @@ footer a:hover {
 
 
 
-.hi-fi-img {
+.hi-fi-img img {
     width: 100%;
     height: auto;
 }
+
+
 
 .hifi-menu-img {
     max-width: 24rem;
@@ -612,7 +619,7 @@ footer a:hover {
 }
 
 .letter {
-
+    padding-top: 0;
     padding-left: 4rem;
 }
 
@@ -621,10 +628,12 @@ footer a:hover {
 }
 
 .style-guide {
-    grid-column: 3/7;
+    grid-column: 2/8;
     margin-top: 3.2rem;
     width: 100%;
     height: auto;
+    padding: 1.6rem 0;
+    border-radius: 2rem;
 }
 
 .key-takeaways {
@@ -654,7 +663,7 @@ footer a:hover {
 }
 
 .hi-fi-img {
-    margin-bottom: 4rem;
+    margin-bottom: 4.8rem;
 }
 
 .personas {
@@ -663,6 +672,10 @@ footer a:hover {
     display: grid;
     grid-template-columns: minmax(1px, auto) repeat(6, minmax(30px, 100px)) minmax(1px, auto);
     grid-column-gap: 16px;
+}
+
+.persona img {
+    border-radius: 4rem;
 }
 
 .personas h4 {
@@ -680,6 +693,7 @@ footer a:hover {
     font-weight: 700;
     font-size: 2.4rem;
     padding-bottom: .8rem;
+    padding-top: 1.6rem;
 }
 
 
@@ -697,15 +711,20 @@ footer a:hover {
     /* border: 3px dotted var(--purple); */
     border-radius: 3rem;
     grid-column: 3/7;
-    margin-bottom: 2.4rem;
+    margin-bottom: 4.8rem;
+    margin-top: 2.1rem;
     padding: 3.2rem 1rem 3.2rem 1rem;
     text-align: center;
+    border-bottom: solid .6rem var(--purple);
+    border-radius: 1rem;
 }
 
 .persona ul {
     display: inline-block;
     text-align: left;
     width: 100%;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
 }
 
 .pref-testing {
@@ -713,7 +732,7 @@ footer a:hover {
     display: grid;
     grid-template-columns: minmax(1px, auto) repeat(6, minmax(30px, 100px)) minmax(1px, auto);
     grid-column-gap: 16px;
-    padding-bottom:0;
+    padding-bottom: 0;
 }
 
 .pref-testing h2,
@@ -751,7 +770,8 @@ footer a:hover {
     grid-column: 2/8;
     height: auto;
     width: 125%;
-    box-shadow:none;
+    box-shadow: none;
+    
 }
 
 .pref-test-a {
@@ -855,7 +875,7 @@ footer a:hover {
 .wireframes {
     background-color: var(--light-blue);
     grid-column: 1/9;
- 
+
     display: grid;
     grid-template-columns: minmax(1px, auto) repeat(6, minmax(30px, 100px)) minmax(1px, auto);
     grid-column-gap: 16px;
@@ -907,20 +927,20 @@ footer a:hover {
 
 .bio-title-section {
     text-align: center;
-    margin-left:1.6rem;
-    margin-right:1.6rem;
+    margin-left: 1.6rem;
+    margin-right: 1.6rem;
 }
 
 .bio-title-section p {
     font-size: 2.4rem;
     margin: 0 auto;
     max-width: 60rem;
-padding-top: 1.6rem;
+    padding-top: 1.6rem;
 }
 
-.bio a:hover::before{ 
-   height: .6rem;
-   z-index: 1;
+.bio a:hover::before {
+    height: .6rem;
+    z-index: 1;
 }
 
 /* .bio a{
@@ -931,7 +951,7 @@ padding-top: 1.6rem;
     padding-bottom: 3px solid #A1C1B6;
 } */
 
-.link-hover:hover::before{
+.link-hover:hover::before {
     height: .8rem;
 }
 
@@ -1101,7 +1121,7 @@ padding-top: 1.6rem;
 
     /*Bio tablet*/
     .bio-title-section {
-    
+
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-items: center;
@@ -1115,7 +1135,7 @@ padding-top: 1.6rem;
         font-size: 3.2rem;
         grid-column: 1;
         grid-row: 1;
-        text-align: left; 
+        text-align: left;
         margin-right: 0rem;
         max-width: 40rem;
         padding-right: 1.6rem;
@@ -1128,7 +1148,7 @@ padding-top: 1.6rem;
         padding-right: 4rem;
     }
 
- 
+
 
     .bio .circles-container {
         grid-column: 1/9;
@@ -1142,6 +1162,7 @@ padding-top: 1.6rem;
         width: 100%;
         grid-column: 2;
     }
+
     .circles-container .love-1 {
         grid-column: 2/3;
         justify-self: end;
@@ -1162,6 +1183,7 @@ padding-top: 1.6rem;
 
     .comp-matrix {
         grid-column: 3/7;
+
     }
 
 }
@@ -1197,12 +1219,12 @@ padding-top: 1.6rem;
 
     /*Prephub case study desktop*/
     .pref-test-1 {
-        grid-template-columns: minmax(20rem, auto) minmax(40rem,50rem) 1.6rem minmax(40rem,50rem) minmax(20rem, auto);
+        grid-template-columns: minmax(20rem, auto) minmax(40rem, 50rem) 1.6rem minmax(40rem, 50rem) minmax(20rem, auto);
         grid-gap: 0px;
     }
 
     .pref-test-2 {
-        grid-template-columns: minmax(20rem, auto) minmax(40rem,50rem) 1.6rem minmax(40rem,50rem) minmax(20rem, auto);
+        grid-template-columns: minmax(20rem, auto) minmax(40rem, 50rem) 1.6rem minmax(40rem, 50rem) minmax(20rem, auto);
         grid-gap: 0px;
     }
 
@@ -1249,7 +1271,7 @@ padding-top: 1.6rem;
         grid-column: 5/8;
     } */
     /*Bio desktop*/
-  
+
     .bio-title-section p {
         font-size: 4.8rem;
         max-width: 50rem;
