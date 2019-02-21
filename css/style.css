@@ -33,6 +33,7 @@ html {
 p {
     font-size: 1.8rem;
     line-height: 1.5;
+    padding-top: .8rem;
     padding-bottom: 1.6rem;
 }
 
@@ -103,7 +104,7 @@ p b {
 } */
 
 .shadow {
-    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* Need to make these open in new tab when they go external */
@@ -262,7 +263,7 @@ main {
 
 /* Nav */
 nav {
-    background-color: rgba(255,255,255);
+    background-color: rgba(255,255,255, .97);
     border-bottom: 3px solid var(--gray-white);
     font-size: 1.6rem;
     position: sticky;
@@ -338,12 +339,12 @@ footer ul {
     grid-template-rows: 6rem;
     align-items: center;
     justify-items: center;
+    float: right;
 
 }
 
 footer p {
     display: none;
-  
     left: 1.6rem;
     line-height: 1;
     padding-bottom: 0;
@@ -355,7 +356,7 @@ footer li {
     grid-row: 1;
     opacity: .7;
     min-width: 6rem;
-    height: 6rem;
+    height: 5rem;
 
 }
 
@@ -400,7 +401,9 @@ footer a:hover {
 
 .headline {
     grid-column: 2 / 8;
-    margin-top: 2.4rem;
+    padding-top: 5.6rem;
+    padding-bottom: 4rem
+
 }
 
 .headline h2 {
@@ -408,7 +411,6 @@ footer a:hover {
     max-width: 32rem;
     border-bottom: .3rem solid var(--purple);
     padding-bottom: .8rem;
-    margin-bottom: .8rem;
     font-size: 2.4rem;
     text-transform: uppercase;
     font-family: "Lora", "Times New Roman", serif;
@@ -423,8 +425,9 @@ footer a:hover {
 .main-topics h1 {
     grid-column: 2/7;
     font-size: 4rem;
-    margin-top: 1rem;
-    margin-bottom: 4.8rem;
+    margin-top: .8rem;
+    margin-bottom: 4rem;
+
 }
 
 /* Case Study sections */
@@ -515,9 +518,11 @@ footer a:hover {
     background-color: var(--light-green);
     border-radius: 3rem;
     margin: 1rem 2rem 0 2rem;
-    padding: 1.6rem 3.2rem;
-    padding-bottom: 0rem;
+    padding-left:3.2rem;
+    padding-right:3.2rem;
+    padding-top: .8rem;
 }
+
 
 .flow {
     margin-top: 2.4rem;
@@ -558,8 +563,7 @@ footer a:hover {
     position: relative;
     background-color: var(--gray-white);
     margin-top: 0rem;
-    padding-top: 1.2rem;
-    padding-bottom: 1.6rem;
+
     grid-column: 1/9;
     display: grid;
     grid-template-columns: minmax(1px, auto) repeat(6, minmax(30px, 100px)) minmax(1px, auto);
@@ -626,8 +630,7 @@ footer a:hover {
 .key-takeaways {
     background-color: var(--light-orange);
     grid-column: 1/9;
-    padding-bottom: 2.4rem;
-    padding-top: 2.4rem;
+
     display: grid;
     grid-template-columns: minmax(1px, auto) repeat(6, minmax(30px, 100px)) minmax(1px, auto);
     grid-column-gap: 16px;
@@ -691,7 +694,7 @@ footer a:hover {
 }
 
 .persona {
-    border: 3px dotted var(--purple);
+    /* border: 3px dotted var(--purple); */
     border-radius: 3rem;
     grid-column: 3/7;
     margin-bottom: 2.4rem;
@@ -710,6 +713,7 @@ footer a:hover {
     display: grid;
     grid-template-columns: minmax(1px, auto) repeat(6, minmax(30px, 100px)) minmax(1px, auto);
     grid-column-gap: 16px;
+    padding-bottom:0;
 }
 
 .pref-testing h2,
@@ -747,6 +751,7 @@ footer a:hover {
     grid-column: 2/8;
     height: auto;
     width: 125%;
+    box-shadow:none;
 }
 
 .pref-test-a {
@@ -769,7 +774,7 @@ footer a:hover {
     grid-column: 2 / 8;
     background-color: var(--purple);
     width: 100%;
-    margin-top: 15rem;
+    margin-top: 16rem;
     height: 4px
 }
 
@@ -850,8 +855,7 @@ footer a:hover {
 .wireframes {
     background-color: var(--light-blue);
     grid-column: 1/9;
-    padding-bottom: 3.2rem;
-    padding-top: 1.8rem;
+ 
     display: grid;
     grid-template-columns: minmax(1px, auto) repeat(6, minmax(30px, 100px)) minmax(1px, auto);
     grid-column-gap: 16px;
@@ -1193,19 +1197,20 @@ padding-top: 1.6rem;
 
     /*Prephub case study desktop*/
     .pref-test-1 {
-        grid-template-columns: minmax(40rem, auto) auto 1.6rem auto minmax(40rem, auto);
+        grid-template-columns: minmax(20rem, auto) minmax(40rem,50rem) 1.6rem minmax(40rem,50rem) minmax(20rem, auto);
         grid-gap: 0px;
     }
 
     .pref-test-2 {
-        grid-template-columns: minmax(40rem, auto) auto 1.6rem auto minmax(40rem, auto);
+        grid-template-columns: minmax(20rem, auto) minmax(40rem,50rem) 1.6rem minmax(40rem,50rem) minmax(20rem, auto);
         grid-gap: 0px;
     }
 
     .pref-test-img {
         margin: 0 auto;
         width: 100%;
-        max-width: 40rem;
+        max-width: 50rem;
+        box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.15);
     }
 
 
@@ -1236,6 +1241,13 @@ padding-top: 1.6rem;
         width: 20rem;
     }
 
+    /* .roles-etc .problem {
+        grid-column: 2/5;
+    }
+
+    .roles-etc .solution {
+        grid-column: 5/8;
+    } */
     /*Bio desktop*/
   
     .bio-title-section p {
