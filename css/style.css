@@ -277,13 +277,17 @@ nav {
 
 nav ul {
     list-style-type: none;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap:1.6rem;
 
 }
 
 nav li {
-    display: inline-block;
-    min-width: 6rem;
-    text-align: center;
+
+    /* display: inline-block;
+  
+    text-align: center; */
 
 }
 
@@ -926,20 +930,17 @@ footer a:hover {
     grid-column-gap: 16px;
 }
 
-.bio-section p {
-    line-height: 1.5;
-}
-
 .bio-title-section {
     text-align: center;
     background-color: #f7f6fa;
 }
 
 .bio-title-section p {
-    font-size: 2.4rem;
+    font-size: 3.2rem;
     margin: 0 auto;
     padding-top: 1.6rem;
-    line-height: 1.25;
+    line-height: 1.1;
+    
 }
 
 .bio-conc a:hover::before {
@@ -955,7 +956,7 @@ footer a:hover {
 }
 
 .bio .it-began {
-    padding-top: 8rem;
+    padding-top: 6.4rem;
 }
 
 
@@ -1045,7 +1046,7 @@ form {
     color: var(--black);
     padding: 7px 0;
     /* background: transparent; */
-    transition: border-color 0.1s;
+    transition: border-color .1s;
   }
   
   .formfield::placeholder {
@@ -1058,6 +1059,10 @@ form {
     top: 20px;
   }
   
+  .formfield:focus::placeholder  {
+      color: rgba(0,0,0, .4);
+  }
+
   label, .formfield:focus ~ .formlabel {
     position: absolute;
     top: 0;
@@ -1231,18 +1236,20 @@ form {
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-items: center;     
-        padding: 8rem 0;
+        padding: 8rem 1.6rem;
+
     }
 
     .bio-title-section p {
-        font-size: 3.2rem;
-        grid-column: 1;
-        grid-row: 1;
+        font-size: 4rem;
+        grid-column: 2;
+ 
+        margin-left: 3.2rem;
         text-align: left;
-        margin-right: 0rem;
+        justify-self: start;
         max-width: 40rem;
-        padding-right: 1.6rem;
         padding-left: 1.6rem;
+        
     }
 
     .bio .circle {
@@ -1254,16 +1261,20 @@ form {
 
     .bio .circles-container {
         grid-column: 1/9;
+        margin-top: 4.8rem;
         display: grid;
-        grid-template-columns: minmax(40px, 72px) auto 1.6rem auto minmax(40px, 72px);
+        grid-template-columns: minmax(40px, 72px) auto .1rem auto minmax(40px, 72px);
         grid-template-rows: auto;
         grid-gap: 1.6rem;
+        grid-row-gap: 4.2rem;
     }
 
     .headshot {
         width: 100%;
-        grid-column: 2;
-        padding-right: 1.6rem;
+        grid-column: 1;
+        padding-left: 1.6rem;
+        justify-self: end;
+       
     }
 
     .circles-container .love-1 {
@@ -1280,7 +1291,7 @@ form {
     .circles-container .love-3 {
         grid-column: 2/5;
         grid-row: 2;
-        margin: 1.6rem auto;
+        margin: auto;
 
     }
 
@@ -1310,16 +1321,13 @@ form {
         left: 7.2rem;
     }
 
-    /*Homepage esktop*/
+    /*Homepage desktop*/
 
     .project {
         padding-top: 8.0rem;
     }
 
-    .hero h2 {
-        font-size: 4.8rem;
-    }
-
+  
     /*Prephub case study desktop*/
     .pref-test-1 {
         grid-template-columns: minmax(20rem, auto) minmax(40rem, 50rem) 1.6rem minmax(40rem, 50rem) minmax(20rem, auto);
@@ -1378,6 +1386,8 @@ form {
     .bio-title-section p {
         font-size: 4.8rem;
         max-width: 50rem;
+        line-height: 1.1
+        ;
     }
 
     /* .bio .circle {
