@@ -553,11 +553,6 @@ footer a:hover {
 
 
 
-.hi-fi-img img {
-    width: 100%;
-    height: auto;
-}
-
 
 
 .hifi-menu-img {
@@ -667,6 +662,8 @@ footer a:hover {
 
 .hi-fi-img {
     margin-bottom: 4.8rem;
+    margin-left: 4rem;
+    
 }
 
 .personas {
@@ -744,13 +741,16 @@ footer a:hover {
     grid-column: 2/8;
 }
 
+.solo-p p {
+    padding-bottom: 8rem;
+}
 
 .pref-test-1 {
     position: relative;
     background-color: var(--light-green);
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-    margin-bottom: 1.6rem;
+    padding-top: 5.6rem;
+    padding-bottom: 5.6rem;
+    margin-bottom: 4rem;
     grid-column: 1/9;
     display: grid;
     grid-template-columns: minmax(1px, auto) repeat(6, minmax(30px, 100px)) minmax(1px, auto);
@@ -759,14 +759,16 @@ footer a:hover {
 
 
 .pref-test-2 {
-    padding-top: 4rem;
+    padding-top: 5.6rem;
+    padding-bottom: 5.6rem;
+    margin-top: 2.4rem;
     position: relative;
     background-color: var(--light-orange);
     grid-column: 1/9;
     display: grid;
     grid-template-columns: minmax(1px, auto) repeat(6, minmax(30px, 100px)) minmax(1px, auto);
     grid-column-gap: 16px;
-    padding-bottom: 4rem;
+   
 }
 
 .pref-test-img {

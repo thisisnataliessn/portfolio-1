@@ -1,22 +1,11 @@
-//   //Initiate carousel
-// $('.main-carousel').flickity({
-//     // options
-//     cellAlign: 'left',
-//     contain: true
-//   });
+  //Initiate carousel
+$('.main-carousel').flickity({
+    // options
+    cellAlign: 'left',
+    contain: true
+  });
 
-// $(function(){
-//    var $arrow= $(".fa-arrow-right");
-//    $(".next-project").hide();
 
-//   $arrow.on('mouseover', function() {
-//     $(".next-project").show();
-
-//   // $arrow.on('mouseout', function() {
-//   //     $(".next-project").show();
-
-//   });
-// });
 
 
 // Find all YouTube videos
