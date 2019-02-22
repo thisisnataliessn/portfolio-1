@@ -1085,7 +1085,8 @@ form {
   form .button {
       color: var(--link-color);
       font-weight: 700;
-      margin-bottom: 4.8rem;
+      margin-bottom: 8rem;
+      margin-top: 4.8rem;
   }
   
   /* .button {
