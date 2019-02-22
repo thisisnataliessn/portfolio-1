@@ -995,9 +995,13 @@ footer a:hover {
 }
 
 /*Contact screen*/
+/* .contact {
+    background-color: red;
+} */
 
 .contact-intro{
-    margin: 4.8rem auto;
+    padding-top: 4.8rem;
+    margin:  auto;
     max-width: 48rem;
     text-align: center;
     line-height: 1.25;
