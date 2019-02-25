@@ -1,11 +1,11 @@
-  // //Initiate carousel
-  // $(document).ready(function () {
-  //   $('.carousel').flickity({
-  //     // options
-  //     cellAlign: 'left',
-  //     contain: true
-  //   });
-  // })
+// //Initiate carousel
+//    $(document).ready(function () {
+//      $('.carousel').flickity({
+//        // options
+//        cellAlign: 'left',
+//        contain: true
+//      });
+//    })
 
 var $carousel = $('.carousel');
 // bind event listener first
@@ -13,7 +13,10 @@ $carousel.on( 'ready.flickity', function() {
   console.log('Flickity ready');
 });
 // initialize Flickity
-$carousel.flickity();
+$carousel.flickity({
+  setGallerySize:false,
+  imagesLoaded: true
+});
 
 
 
