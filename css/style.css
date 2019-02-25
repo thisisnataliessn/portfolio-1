@@ -55,9 +55,9 @@ a::before {
     transition: .4s all;
 }
 
-/* nav.active li {
-    background-color: #CBC0E3;
-} */
+.active{
+    color: var(--purple);
+}
 
 .circle {
     background-color: var(--light-green);
@@ -283,13 +283,6 @@ nav ul {
 
 }
 
-nav li {
-
-    /* display: inline-block;
-  
-    text-align: center; */
-
-}
 
 nav li a:hover:before {
     height: .6rem;
