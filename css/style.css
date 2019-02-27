@@ -255,9 +255,11 @@ main {
     color: var(--black);
 }
 
-.busybus {
+.project-2 {
     background-color: var(--light-orange);
 }
+
+
 
 
 
@@ -803,7 +805,7 @@ footer a:hover {
     height: 4px
 }
 
-.title-section {
+.prephub {
     background-color: var(--light-blue);
     display: grid;
     grid-template-columns: minmax(1px, auto) repeat(6, minmax(30px, 100px)) minmax(1px, auto);
@@ -921,6 +923,13 @@ footer a:hover {
 .title-section .busybus-screenshot {
     grid-column: 1/9;
     margin: 1.6rem auto;
+}
+
+.busybus {
+    background-color: var(--light-orange);
+    display: grid;
+    grid-template-columns: minmax(1px, auto) repeat(6, minmax(30px, 100px)) minmax(1px, auto);
+    grid-column-gap: 16px;
 }
 
 
