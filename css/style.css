@@ -494,9 +494,15 @@ footer a:hover {
 }
 
 .conc {
-    padding-bottom: 4.2rem;
+    padding-bottom: 8rem;
 }
 
+.conc .button {
+   grid-column: 3/7;
+   margin-top:2.4rem;
+   margin-bottom: 2.4rem;
+   
+}
 .conc h1 {
     line-height: 125%;
     max-width: 20rem;
