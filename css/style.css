@@ -361,13 +361,15 @@ footer li {
 
 footer a {
     color: var(--black);
-    transition: .5s all ease-in-out;
+    transition: .3s all ease-in-out;
+    display: block;
 }
 
 
 footer a:hover {
     color: var(--link-color);
-    font-size: 3.2rem;
+    transform: scale(1.3);
+    transform-origin: top;
 }
 
 
@@ -581,11 +583,11 @@ footer a:hover {
 .hi-fi-mocks hr,
 .hi-fi-mocks p,
 .hi-fi-mocks .grid-view,
-
 .hi-fi-mocks .hover-screenshot,
 .hi-fi-mocks .carousel {
     grid-column: 2/8;
 }
+
 
 .hi-fi-mocks .left-nav {
     width: 200%;
@@ -664,7 +666,6 @@ footer a:hover {
 
 .hi-fi-img {
     margin-bottom: 4.8rem;
-    margin-left: 4rem;
     
 }
 
@@ -712,7 +713,7 @@ footer a:hover {
 .persona {
     /* border: 3px dotted var(--purple); */
     border-radius: 3rem;
-    grid-column: 3/7;
+    grid-column: 2/8;
     margin-bottom: 4.8rem;
     margin-top: 2.1rem;
     padding: 3.2rem 1rem 3.2rem 1rem;
@@ -945,20 +946,30 @@ footer a:hover {
 .bio-title-section {
     text-align: center;
     background-color: #f7f6fa;
+    padding-right: 1.6rem;
+    padding-left: 1.6rem;
 }
 
-.bio-title-section p {
+.bio-title-section h1 {
     font-size: 3.2rem;
     margin: 0 auto;
     padding-top: 1.6rem;
     line-height: 1.1;
-    
+    padding-bottom: 2.4rem;
 }
+
+.bio-title-section h1 b {
+    font-weight: 700;
+    color: var(--purple);
+}
+
 
 .bio-conc a:hover::before {
     height: .6rem;
     z-index: 1;
 }
+
+
 
 .bio .resume {
     display: flex;
@@ -1252,7 +1263,7 @@ form {
 
     }
 
-    .bio-title-section p {
+    .bio-title-section h1 {
         font-size: 4rem;
         grid-column: 2;
  
@@ -1400,7 +1411,7 @@ form {
 
     /*Bio desktop*/
 
-    .bio-title-section p {
+    .bio-title-section h1 {
         font-size: 4.8rem;
         max-width: 50rem;
         line-height: 1.1
