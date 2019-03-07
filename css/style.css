@@ -55,7 +55,7 @@ a::before {
     transition: .4s all;
 }
 
-.active{
+.active {
     color: var(--purple);
 }
 
@@ -185,7 +185,7 @@ main {
 }
 
 .prephub-screenshot {
-    padding-top: 42px;
+
     height: auto;
     width: 100%;
     max-width: 700px;
@@ -281,7 +281,7 @@ nav ul {
     list-style-type: none;
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-gap:1.6rem;
+    grid-gap: 1.6rem;
 
 }
 
@@ -502,11 +502,12 @@ footer a:hover {
 }
 
 .conc .button {
-   grid-column: 3/7;
-   margin-top:2.4rem;
-   margin-bottom: 2.4rem;
-   
+    grid-column: 3/7;
+    margin-top: 2.4rem;
+    margin-bottom: 2.4rem;
+
 }
+
 .conc h1 {
     line-height: 125%;
     max-width: 20rem;
@@ -666,7 +667,7 @@ footer a:hover {
 
 .hi-fi-img {
     margin-bottom: 4.8rem;
-    
+
 }
 
 .personas {
@@ -771,7 +772,7 @@ footer a:hover {
     display: grid;
     grid-template-columns: minmax(1px, auto) repeat(6, minmax(30px, 100px)) minmax(1px, auto);
     grid-column-gap: 16px;
-   
+
 }
 
 .pref-test-img {
@@ -813,6 +814,10 @@ footer a:hover {
     grid-column-gap: 16px;
 }
 
+.title-section {
+    padding-top: 42px;
+}
+
 .title-section p {
     padding-top: 1.6rem;
     padding-bottom: 4.8rem;
@@ -831,7 +836,7 @@ footer a:hover {
     grid-column: 2/8;
 }
 
-.user-surveys{
+.user-surveys {
     padding-bottom: 4rem;
 
 }
@@ -1025,9 +1030,10 @@ footer a:hover {
 .contact {
     margin: 1.6rem;
 }
-.contact-intro{
+
+.contact-intro {
     padding-top: 4.8rem;
-    margin:  auto;
+    margin: auto;
     max-width: 48rem;
     text-align: center;
     line-height: 1.25;
@@ -1050,10 +1056,11 @@ footer a:hover {
 
 form {
     max-width: 50rem;
-    margin: auto; 
+    margin: auto;
     margin-top: 4.8rem;
 }
-.formgroup{
+
+.formgroup {
     position: relative;
     padding: 15px 0 0;
     margin-top: 10px;
@@ -1070,23 +1077,24 @@ form {
     padding: 7px 0;
     /* background: transparent; */
     transition: border-color .1s;
-  }
-  
-  .formfield::placeholder {
+}
+
+.formfield::placeholder {
     color: transparent;
-  }
-  
-  .formfield:placeholder-shown ~ .formlabel {
+}
+
+.formfield:placeholder-shown~.formlabel {
     font-size: 16px;
     cursor: text;
     top: 20px;
-  }
-  
-  .formfield:focus::placeholder  {
-      color: rgba(0,0,0, .4);
-  }
+}
 
-  label, .formfield:focus ~ .formlabel {
+.formfield:focus::placeholder {
+    color: rgba(0, 0, 0, .4);
+}
+
+label,
+.formfield:focus~.formlabel {
     position: absolute;
     top: 0;
     display: block;
@@ -1094,30 +1102,30 @@ form {
     font-size: 12px;
     font-weight: bold;
     color: var(--black);
-  }
-  
-  .formfield:focus ~ .formlabel {
+}
+
+.formfield:focus~.formlabel {
     color: var(--purple);
-  }
-  
-  .formfield:focus {
+}
+
+.formfield:focus {
     padding-bottom: 6px;
     border-bottom: 2px solid var(--purple);
-  }
-  
-  .formbutton {
+}
+
+.formbutton {
     margin: 2% 25% 0 25%;
     padding: 0;
-  }
-  
-  form .button {
-      color: var(--link-color);
-      font-weight: 700;
-      margin-bottom: 8rem;
-      margin-top: 4.8rem;
-  }
-  
-  /* .button {
+}
+
+form .button {
+    color: var(--link-color);
+    font-weight: 700;
+    margin-bottom: 8rem;
+    margin-top: 4.8rem;
+}
+
+/* .button {
     width: 150px;
     border: 1px solid rgba(0,0,0,.4);
     font-weight: 700;
@@ -1133,7 +1141,7 @@ form {
     border: 1px solid rgba(0,152,0,.6);
     box-shadow: 0 5px 10px rgb(0,0,0,.5);
   } */
-  
+
 
 
 /*tablet*/
@@ -1177,6 +1185,24 @@ form {
     .project {
         padding-left: 60px;
         padding-right: 60px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1.6rem;
+        align-items: center;
+    }
+
+    .project-2 a {
+        grid-column: 2;
+    }
+
+    .project-2 .project-info {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+
+    .project h1 {
+        padding-top: 0;
     }
 
     .project h2 {
@@ -1258,7 +1284,7 @@ form {
     .bio-title-section {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        align-items: center;     
+        align-items: center;
         padding: 8rem 1.6rem;
 
     }
@@ -1266,13 +1292,13 @@ form {
     .bio-title-section h1 {
         font-size: 4rem;
         grid-column: 2;
- 
+
         margin-left: 3.2rem;
         text-align: left;
         justify-self: start;
         max-width: 40rem;
         padding-left: 1.6rem;
-        
+
     }
 
     .bio .circle {
@@ -1297,7 +1323,7 @@ form {
         grid-column: 1;
         padding-left: 1.6rem;
         justify-self: end;
-       
+
     }
 
     .circles-container .love-1 {
@@ -1350,7 +1376,7 @@ form {
         padding-top: 8.0rem;
     }
 
-  
+
     /*Prephub case study desktop*/
     .pref-test-1 {
         grid-template-columns: minmax(20rem, auto) minmax(40rem, 50rem) 1.6rem minmax(40rem, 50rem) minmax(20rem, auto);
@@ -1414,8 +1440,7 @@ form {
     .bio-title-section h1 {
         font-size: 4.8rem;
         max-width: 50rem;
-        line-height: 1.1
-        ;
+        line-height: 1.1;
     }
 
     /* .bio .circle {
