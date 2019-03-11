@@ -94,8 +94,7 @@ img {
 li b,
 p b {
     font-weight: 700;
-    /* color: var(--purple); */
-    background-image: linear-gradient(0deg, #dcd7e6 50%, transparent 50%);
+    color: var(--purple);
     
 }
 
@@ -218,7 +217,7 @@ main {
 
 .hero h1 span {
     color: var(--purple);
-    background-image: linear-gradient(0deg, #f6e5d9 60%, transparent 60%);
+    /* background-image: linear-gradient(0deg, #d2ccdf 55%, transparent 55%); */
 }
 
 .hero p {
@@ -552,12 +551,6 @@ footer a:hover {
     margin-bottom: 3.2rem;
     padding: 2.4rem 3.2rem;
 }
-/* 
-.frustrations span {
-    color: var(--purple);
-    font-weight: 700;
-    background-image: linear-gradient(0deg, #f6e5d9 60%, transparent 60%);
-} */
 
 
 
@@ -969,9 +962,9 @@ footer a:hover {
 }
 
 .bio-title-section h1 b {
-    /* font-weight: 700; */
+    font-weight: 700;
     color: var(--purple);
-    background-image: linear-gradient(0deg, #f6e5d9 60%, transparent 60%);
+    /* background-image: linear-gradient(0deg, #d2ccdf 60%, transparent 60%); */
     
 }
 
@@ -1059,7 +1052,7 @@ footer a:hover {
 
 .contact span {
     color: var(--purple);
-    background-image: linear-gradient(0deg, #f6e5d9 60%, transparent 60%);
+    /* background-image: linear-gradient(0deg, #f6e5d9 55%, transparent 55%); */
 }
 
 form {
@@ -1404,16 +1397,16 @@ form .button {
     .project-info {
         grid-row:1;
         grid-column: 1;
+ 
     }
 
     .blob {
         display: block;
         margin-top: -3.2rem;
+ /* height: 100%;
+ width: 100%; */
     }
 
-    .blob2 {
-       
-    }
     .project-info{
         padding: 4rem 0;
     }
