@@ -185,11 +185,11 @@ main {
 }
 
 .prephub-screenshot {
-
     height: auto;
     width: 100%;
     max-width: 700px;
 }
+
 
 .busybus-screenshot {
     height: auto;
@@ -1186,17 +1186,23 @@ form .button {
         padding-left: 60px;
         padding-right: 60px;
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 1.6rem;
+        grid-template-columns: auto repeat(2, minmax(40px,700px)) auto;
+        grid-gap: 4.8rem;
         align-items: center;
     }
 
-    .project-2 a {
+    .project-1  a  {
         grid-column: 2;
+     
+    }
+    
+    .project-2 a {
+        grid-column: 3;
+      
     }
 
     .project-2 .project-info {
-        grid-column: 1;
+        grid-column: 2;
         grid-row: 1;
     }
 
