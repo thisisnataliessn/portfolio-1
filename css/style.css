@@ -214,10 +214,8 @@ main {
     font-family: 'Lora', 'Times New Roman', serif;
 }
 
-
-.hero h1 span,
-.hero h2 span {
-    color: var(--purple);
+.hero h1 span {
+    background-image: linear-gradient(0deg, #d2ccdf 60%, transparent 60%)
 }
 
 .hero p {
@@ -968,7 +966,8 @@ footer a:hover {
 
 .bio-title-section h1 b {
     font-weight: 700;
-    color: var(--purple);
+    background-image: linear-gradient(0deg, #d2ccdf 60%, transparent 60%);
+    
 }
 
 
