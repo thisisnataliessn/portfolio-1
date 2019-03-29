@@ -253,7 +253,7 @@ main {
     background: var(--purple);
     z-index:-1;
     top:4rem;
-    opacity: .6;
+    opacity: .4;
     transform: skewX(-20deg)
 }
 
@@ -1044,7 +1044,7 @@ footer a:hover {
     background: var(--purple);
     z-index:-1;
     top: 45%;
-    opacity: .6;
+    opacity: .4;
     transform: skewX(-20deg)
 }
 
@@ -1151,7 +1151,7 @@ footer a:hover {
     background: var(--purple);
     z-index:-1;
     top: 40%;
-    opacity: .6;
+    opacity: .4;
     transform: skewX(-20deg)
 }
 
