@@ -9,9 +9,10 @@
     --link-color: #50796B;
     --light-green: #D4E3DE;
     --gray-white: #f6f6f6;
-    --light-orange: #F6E5D9;
-    --light-blue: #F2F5FA;
+    --light-orange: #EFD3BE;
+    --light-blue: #BFDBE9;
     --black: #121213;
+    --yellow:#F6FEAA;
 }
 
 body {
@@ -94,7 +95,6 @@ img {
 li b,
 p b {
     font-weight: 700;
-    color: var(--purple);
 }
 
 /* .black-bold {
@@ -227,7 +227,11 @@ main {
     padding-bottom: 8rem;
 }
 
-.hero h1,
+.hero h1 {
+    font-size:7.2rem;
+    font-family: 'Lora', 'Times New Roman', serif;
+}
+
 .hero h2 {
     font-size: 4.2rem;
     line-height: 125%;
@@ -235,10 +239,33 @@ main {
 }
 
 
-.hero h1 span,
-.hero h2 span {
-    color: var(--purple);
-    font-weight: 700;
+.hero span {
+    position: relative;
+}
+
+
+
+.hero h1 span:before {
+    position: absolute;
+    content:"";
+    height:2.4rem;
+    width: 100%;
+    background: var(--purple);
+    z-index:-1;
+    top:4rem;
+    opacity: .6;
+    transform: skewX(-20deg)
+}
+
+.hero h2 span:before {
+    position: absolute;
+    content:"";
+    height:1.6rem;
+    width: 100%;
+    background: var(--yellow);
+    z-index:-1;
+    top:40%;
+    transform: skewX(-20deg)
 }
 
 .hero p {
@@ -648,6 +675,7 @@ footer a:hover {
 
 .number {
     font-size: 2.4rem;
+    color: var(--purple);
 }
 
 .style-guide {
@@ -970,7 +998,6 @@ footer a:hover {
 
 .bio-title-section {
     text-align: center;
-    background-color: #f7f6fa;
     padding-right: 1.6rem;
     padding-left: 1.6rem;
 }
@@ -983,9 +1010,53 @@ footer a:hover {
     padding-bottom: 2.4rem;
 }
 
-.bio-title-section h1 b {
-    font-weight: 700;
-    color: var(--purple);
+.bio-title-section h1 span {
+    z-index: 5;
+    position: relative;
+}
+
+.bio-title-section h1 .span1:before {
+    position: absolute;
+    content:"";
+    height:1.2rem;
+    width: 100%;
+    background: var(--light-blue);
+    z-index:-1;
+    top: 45%;
+        transform: skewX(-20deg)
+}
+
+.bio-title-section h1 .span2:before {
+    position: absolute;
+    content:"";
+    height:1.2rem;
+    width: 100%;
+    background: var(--yellow);
+    z-index:-1;
+    top: 45%;
+        transform: skewX(-20deg)
+}
+.bio-title-section h1 .span3:before {
+    position: absolute;
+    content:"";
+    height:1.2rem;
+    width: 100%;
+    background: var(--purple);
+    z-index:-1;
+    top: 45%;
+    opacity: .6;
+    transform: skewX(-20deg)
+}
+
+.bio-title-section h1 .span4:before {
+    position: absolute;
+    content:"";
+    height:1.2rem;
+    width: 100%;
+    background: var(--light-orange);
+    z-index:-1;
+    top: 45%;
+    transform: skewX(-20deg)
 }
 
 
@@ -1044,9 +1115,7 @@ footer a:hover {
 }
 
 /*Contact screen*/
-/* .contact {
-    background-color: red;
-} */
+
 .contact {
     margin: 1.6rem;
 }
@@ -1071,8 +1140,19 @@ footer a:hover {
 }
 
 .contact span {
-    color: var(--purple);
-    font-weight: 700;
+ position: relative;
+}
+
+.contact span:before {
+    position: absolute;
+    content:"";
+    height:1.6rem;
+    width: 100%;
+    background: var(--purple);
+    z-index:-1;
+    top: 40%;
+    opacity: .6;
+    transform: skewX(-20deg)
 }
 
 form {
@@ -1174,9 +1254,6 @@ form .button {
         visibility: visible;
     }
 
-    .hero h1 {
-        font-size: 7.2rem;
-    }
 
     footer ul {
         position: absolute;
@@ -1199,7 +1276,7 @@ form .button {
     }
 
     .hero h1 {
-        line-height: 120%;
+        line-height: 1.25;
     }
 
 
