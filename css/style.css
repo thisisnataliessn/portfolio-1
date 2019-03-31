@@ -986,6 +986,32 @@ footer a:hover {
     grid-column-gap: 16px;
 }
 
+.gmaps-icon {
+    grid-row: 3;
+    grid-column: 4/6;
+    max-height: 10rem;
+    justify-self: center;
+}
+
+.gmaps {
+    grid-row: 4;
+    grid-column: 2/8;
+    justify-self: center;
+}
+
+.cm-icon {
+    grid-row: 5;
+    grid-column: 4/6;
+    max-height: 10rem;
+    justify-self: center;
+    margin-top: 4rem;
+}
+.citymapper {
+    grid-row: 6;
+    grid-column: 2/8;
+    justify-self: center;
+}
+
 
 .user-surveys .busy-research .stat-2 {
     grid-column: 3 / 7;
@@ -993,23 +1019,11 @@ footer a:hover {
 
 .busy-research .stat-2 p {
     max-width: 400px;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
 }
 
-.gmaps {
-    grid-column: 2/5;
-}
 
-.citymapper {
-    grid-column: 5/8;
-}
-
-.gmaps-icon {
-    grid-column: 3/4;
-}
-
-.cm-icon {
-    grid-column: 6/7;
-}
 
 /*Bio Page*/
 
@@ -1404,7 +1418,25 @@ form .button {
     }
 
     /*Busybus case study tablet*/
-
+    .gmaps {
+        grid-column: 2/5;
+    }
+    
+    .citymapper {
+        grid-row: 4;
+        grid-column: 5/8;
+    }
+    
+    .gmaps-icon {
+        
+        grid-column: 3/4;
+    }
+    
+    .cm-icon {
+        grid-column: 6/7;
+        grid-row: 3;
+        margin-top: 0;
+    }
 
     /*Bio tablet*/
 
