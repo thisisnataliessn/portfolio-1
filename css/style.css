@@ -254,7 +254,7 @@ main {
     z-index:-1;
     top:4rem;
     opacity: .4;
-    transform: skewX(-20deg)
+    transform: skewX(-20deg);
 }
 
 .hero h2 span:before {
@@ -1463,7 +1463,10 @@ form .button {
         grid-column-gap: 72px;
     }
 
-
+    nav {
+        padding-left:5.6rem;
+        padding-right: 5.6rem;
+    }
 
 
     footer ul {
