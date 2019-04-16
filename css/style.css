@@ -5,14 +5,14 @@
 
 /*GLOBAL COLORS*/
 :root {
-    --purple: #76649E;
+    --purple: rgb(118, 100, 158);
     --link-color: #50796B;
     --light-green: #D4E3DE;
     --gray-white: #f6f6f6;
     --light-orange: #EFD3BE;
     --light-blue: #BFDBE9;
     --black: #121213;
-    --yellow:#F6FEAA;
+    --yellow: #F6FEAA;
 }
 
 body {
@@ -129,27 +129,13 @@ p b {
 }
 
 
-/*CSS Grid + layout - mobile first*/
-/* .container {
-    display: grid;
-    grid-template-rows: 85px auto;
-    grid-template-columns: minmax(16px, auto) repeat(6, minmax(30px, 100px)) minmax(16px, auto);
-    grid-column-gap: 16px;
-} */
-
-/* nav {
-    grid-row: 1 / span 1;
-    grid-column: 1 /span 8;
-
-} */
-
 /*Scroll*/
 .scroll-indicator {
     position: fixed;
     top: 100px;
     z-index: 5;
     width: 100%;
-    background-color:var(--gray-white);
+    background-color: var(--gray-white);
 }
 
 .progress-container {
@@ -228,7 +214,7 @@ main {
 }
 
 .hero h1 {
-    font-size:7.2rem;
+    font-size: 7.2rem;
     font-family: 'Lora', 'Times New Roman', serif;
 }
 
@@ -247,24 +233,24 @@ main {
 
 .hero h1 span:before {
     position: absolute;
-    content:"";
-    height:2.4rem;
+    content: "";
+    height: 2.4rem;
     width: 100%;
     background: var(--purple);
-    z-index:-1;
-    top:4rem;
+    z-index: -1;
+    top: 4rem;
     opacity: .4;
     transform: skewX(-20deg);
 }
 
 .hero h2 span:before {
     position: absolute;
-    content:"";
-    height:1.6rem;
+    content: "";
+    height: 1.6rem;
     width: 100%;
     background: var(--yellow);
-    z-index:-1;
-    top:40%;
+    z-index: -1;
+    top: 40%;
     transform: skewX(-20deg)
 }
 
@@ -297,7 +283,7 @@ main {
     font-size: 2rem;
     padding-top: 1.6rem;
     padding-bottom: 4.2rem;
-    line-height:1.5;
+    line-height: 1.5;
     font-weight: 500;
     color: var(--black);
 }
@@ -1006,23 +992,59 @@ footer a:hover {
     justify-self: center;
     margin-top: 4rem;
 }
+
 .citymapper {
     grid-row: 6;
     grid-column: 2/8;
     justify-self: center;
 }
 
-/* 
-.user-surveys .busy-research .stat-2 {
-    grid-column: 3 / 7;
+/*Spork Case Study*/
+
+.spork {
+    background-color: var(--light-orange);
+    display: grid;
+    grid-template-columns: minmax(1px, auto) repeat(6, minmax(30px, 100px)) minmax(1px, auto);
+    grid-column-gap: 16px;
 }
 
-.busy-research .stat-2 p {
-    max-width: 400px;
-    padding-left: 1.6rem;
-    padding-right: 1.6rem;
+.screenshot-group {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    align-items: center;
+    padding-bottom: 42px;
 }
- */
+
+.hero-1 {
+    grid-column: 8/12;
+    grid-row: 1;
+}
+
+.hero-2 {
+    grid-column: 4/9;
+    grid-row: 1;
+    z-index: 1;
+}
+
+.hero-3 {
+    grid-column: 1/5;
+    grid-row: 1;
+}
+
+.spork-logo {
+    width: 24rem;
+}
+.prob-proto-container {
+    grid-column: 2 / 8;
+}
+
+.spork-prototype-container {
+    grid-column: 2 / 8;
+    margin: auto;
+    margin-top: 2.4rem;
+    justify-self: center;
+    text-align: center;
+}
 
 
 /*Bio Page*/
@@ -1055,32 +1077,33 @@ footer a:hover {
 
 .bio-title-section h1 .span1:before {
     position: absolute;
-    content:"";
-    height:1.2rem;
+    content: "";
+    height: 1.2rem;
     width: 100%;
     background: var(--light-blue);
-    z-index:-1;
+    z-index: -1;
     top: 45%;
-        transform: skewX(-20deg)
+    transform: skewX(-20deg)
 }
 
 .bio-title-section h1 .span2:before {
     position: absolute;
-    content:"";
-    height:1.2rem;
+    content: "";
+    height: 1.2rem;
     width: 100%;
     background: var(--yellow);
-    z-index:-1;
+    z-index: -1;
     top: 45%;
-        transform: skewX(-20deg)
+    transform: skewX(-20deg)
 }
+
 .bio-title-section h1 .span3:before {
     position: absolute;
-    content:"";
-    height:1.2rem;
+    content: "";
+    height: 1.2rem;
     width: 100%;
     background: var(--purple);
-    z-index:-1;
+    z-index: -1;
     top: 45%;
     opacity: .4;
     transform: skewX(-20deg)
@@ -1088,11 +1111,11 @@ footer a:hover {
 
 .bio-title-section h1 .span4:before {
     position: absolute;
-    content:"";
-    height:1.2rem;
+    content: "";
+    height: 1.2rem;
     width: 100%;
     background: var(--light-orange);
-    z-index:-1;
+    z-index: -1;
     top: 45%;
     transform: skewX(-20deg)
 }
@@ -1178,16 +1201,16 @@ footer a:hover {
 }
 
 .contact span {
- position: relative;
+    position: relative;
 }
 
 .contact span:before {
     position: absolute;
-    content:"";
-    height:1.6rem;
+    content: "";
+    height: 1.6rem;
     width: 100%;
     background: var(--purple);
-    z-index:-1;
+    z-index: -1;
     top: 40%;
     opacity: .4;
     transform: skewX(-20deg)
@@ -1322,19 +1345,19 @@ form .button {
         padding-left: 60px;
         padding-right: 60px;
         display: grid;
-        grid-template-columns: auto repeat(2, minmax(40px,700px)) auto;
+        grid-template-columns: auto repeat(2, minmax(40px, 700px)) auto;
         grid-gap: 4.8rem;
         align-items: center;
     }
 
-    .project-1  a  {
+    .project-1 a {
         grid-column: 2;
-     
+
     }
-    
+
     .project-2 a {
         grid-column: 3;
-      
+
     }
 
     .project-2 .project-info {
@@ -1421,22 +1444,29 @@ form .button {
     .gmaps {
         grid-column: 2/5;
     }
-    
+
     .citymapper {
         grid-row: 4;
         grid-column: 5/8;
     }
-    
+
     .gmaps-icon {
-        
+
         grid-column: 3/4;
     }
-    
+
     .cm-icon {
         grid-column: 6/7;
         grid-row: 3;
         margin-top: 0;
     }
+
+    /*Spork case study tablet*/
+
+
+
+
+
 
     /*Bio tablet*/
 
@@ -1520,7 +1550,7 @@ form .button {
     }
 
     nav {
-        padding-left:5.6rem;
+        padding-left: 5.6rem;
         padding-right: 5.6rem;
     }
 
@@ -1586,17 +1616,34 @@ form .button {
         width: 20rem;
     }
 
-    /* .roles-etc .problem {
-        grid-column: 2/5;
-    }
+   /*Spork case study desktop*/
+   .prob-proto-container {
+       grid-column: 2/8;
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       grid-column-gap: 3.2rem;
+       grid-template-rows: auto .01rem auto;
+       align-content: center;
+   }
 
-    .roles-etc .solution {
-        grid-column: 5/8;
-    } */
+  .prob-proto-container .problem{
+      grid-column: 1;
+      grid-row: 1;
+      margin-left: -4rem; 
+  }
 
-    /* .wireframes {
-        margin-top:16rem;
-    } */
+  .prob-proto-container .solution {
+    grid-column: 1; 
+    margin-left: -4rem; 
+    grid-row: 3;
+  }
+  .spork-prototype-container {
+      grid-column: 2;
+      grid-row: 1/-1;
+      margin-right: -10.4rem; 
+  }
+
+
 
     /*Bio desktop*/
 
