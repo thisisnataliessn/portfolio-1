@@ -1001,7 +1001,7 @@ footer a:hover {
     justify-self: center;
 }
 
-/*Spork Case Study*/
+/*Spork Case Study Mobile*/
 
 
 .spork {
@@ -1064,20 +1064,72 @@ footer a:hover {
     grid-column: 2 / 8;
 }
 
-.three-personas{
-        grid-column: 1/9;
-        position: relative;
-        display: grid;
-        grid-template-columns: minmax(1px, auto) repeat(6, minmax(30px, 100px)) minmax(1px, auto);
-        grid-column-gap: 16px;
+.three-personas {
+    margin-bottom: 2.4rem;
 }
 
-.three-personas .button {
-    grid-row: 4;
-    grid-column: 3/7;
+.card {
+    display: grid;
+    grid-template-rows: minmax(154px, 300px) auto;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 1.6rem auto;
 }
 
-.three-personas h4 {
+.card-img {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: grid;
+    grid-template-rows: auto 3rem 3rem .8rem;
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-img-gradient {
+    content: "";
+    position: absolute;
+    display: block;
+    position: absolute;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 5e-05) 0%, rgba(0, 0, 0, 0.125) 65.46%, rgba(0, 0, 0, 0.375) 77%, rgba(0, 0, 0, 0.44) 86.3%, rgba(0, 0, 0, 0.5) 100%);
+    height: 100%;
+    width: 100%;
+}
+
+
+.card-img h3,
+.card-img h4 {
+    z-index: 1;
+    font-size: 2.4rem;
+    padding-left: 1.6rem;
+
+}
+
+.card-img h3 {
+    grid-row: 2;
+    font-weight: 700;
+}
+
+.card-img h4 {
+    grid-row: 3;
+}
+
+.card-body {
+    padding: 1.6rem 1.6rem 3.2rem 1.6rem;
+}
+
+.card h5 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: .1rem;
+    padding-top: 1.6rem;
+    text-transform: uppercase;
+    /* font-smooth: always; */
+}
+
+
+/* Old format of personas
+.three-personas h3 {
     font-size: 2.4rem;
     font-weight: 700;
     
@@ -1099,7 +1151,7 @@ footer a:hover {
 
 .three-personas img {
     max-height: 20rem;
-}
+} */
 
 /*Bio Page*/
 
@@ -1624,7 +1676,7 @@ form .button {
     }
 
 
-    /*Prephub case study desktop*/
+    /*Prephub desktop*/
     .pref-test-1 {
         grid-template-columns: minmax(20rem, auto) minmax(40rem, 50rem) 1.6rem minmax(40rem, 50rem) minmax(20rem, auto);
         grid-gap: 0px;
@@ -1670,7 +1722,7 @@ form .button {
         width: 20rem;
     }
 
-    /*Spork case study desktop*/
+    /*Spork desktop*/
     .prob-proto-container {
         grid-column: 2/8;
         display: grid;
@@ -1696,6 +1748,30 @@ form .button {
         margin-right: -8.8rem;
     }
 
+    .three-personas {
+        grid-column: 1/9;
+        position: relative;
+        display: grid;
+        grid-template-columns: minmax(1.6rem, auto) repeat(6, minmax(auto, 20rem)) minmax(1.6rem, auto);
+        grid-gap: 1.6rem;        
+    }
+
+    .card {
+        margin: 0;
+    }
+    .three-personas .alex {
+        grid-column: 2/4;
+        justify-self: end;
+    }
+
+    .three-personas .julia {
+        grid-column: 4/6;
+        justify-self: center;
+    }
+    .three-personas .fiona {
+        grid-column: 6/8;
+        justify-self: start;
+    }
 
 
     /*Bio desktop*/
