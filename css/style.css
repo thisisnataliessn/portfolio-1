@@ -58,6 +58,7 @@ a::before {
 
 .active {
     color: var(--purple);
+    text-transform: uppercase;
 }
 
 .circle {
@@ -673,7 +674,7 @@ footer a:hover {
     border-radius: 2rem;
 }
 
-.key-takeaways {
+.orange-bkgd {
     background-color: var(--light-orange);
     grid-column: 1/9;
     display: grid;
@@ -682,9 +683,9 @@ footer a:hover {
     padding-bottom: 4rem;
 }
 
-.key-takeaways h2,
-.key-takeaways hr,
-.key-takeaways p {
+.orange-bkgd h2,
+.orange-bkgd hr,
+.orange-bkgd p {
     grid-column: 2 / 8;
 }
 
@@ -755,6 +756,7 @@ footer a:hover {
     text-align: center;
     border-bottom: solid .6rem var(--purple);
     border-radius: 1rem;
+    background-color: white;
 }
 
 .persona ul {
@@ -1001,6 +1003,7 @@ footer a:hover {
 
 /*Spork Case Study*/
 
+
 .spork {
     background-color: var(--light-orange);
     display: grid;
@@ -1034,6 +1037,7 @@ footer a:hover {
 .spork-logo {
     width: 24rem;
 }
+
 .prob-proto-container {
     grid-column: 2 / 8;
 }
@@ -1046,6 +1050,56 @@ footer a:hover {
     text-align: center;
 }
 
+/*Spork user personas section*/
+.spork-container .research .gray-bkgd {
+    background-color: var(--gray-white);
+    grid-column: 1/9;
+    padding-bottom: 4rem;
+}
+
+
+.gray-bkgd h2,
+.gray-bkgd hr,
+.gray-bkgd p {
+    grid-column: 2 / 8;
+}
+
+.three-personas{
+        grid-column: 1/9;
+        position: relative;
+        display: grid;
+        grid-template-columns: minmax(1px, auto) repeat(6, minmax(30px, 100px)) minmax(1px, auto);
+        grid-column-gap: 16px;
+}
+
+.three-personas .button {
+    grid-row: 4;
+    grid-column: 3/7;
+}
+
+.three-personas h4 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    
+    padding-top: 1.6rem;
+}
+
+.three-personas h5 {
+    font-size: 1.8rem;
+    padding-top: .8rem;
+    line-height: 1.5;
+}
+
+.three-personas h6{
+    font-weight: 700;
+    font-size: 2.4rem;
+    padding-bottom: .8rem;
+    padding-top: 1.6rem;
+}
+
+.three-personas img {
+    max-height: 20rem;
+}
 
 /*Bio Page*/
 
@@ -1616,32 +1670,31 @@ form .button {
         width: 20rem;
     }
 
-   /*Spork case study desktop*/
-   .prob-proto-container {
-       grid-column: 2/8;
-       display: grid;
-       grid-template-columns: 1fr 1fr;
-       grid-column-gap: 3.2rem;
-       grid-template-rows: auto .01rem auto;
-       align-content: center;
-   }
+    /*Spork case study desktop*/
+    .prob-proto-container {
+        grid-column: 2/8;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto .01rem auto;
+    }
 
-  .prob-proto-container .problem{
-      grid-column: 1;
-      grid-row: 1;
-      margin-left: -4rem; 
-  }
+    .prob-proto-container .problem {
+        grid-column: 1;
+        grid-row: 1;
+        margin-left: -4rem;
+    }
 
-  .prob-proto-container .solution {
-    grid-column: 1; 
-    margin-left: -4rem; 
-    grid-row: 3;
-  }
-  .spork-prototype-container {
-      grid-column: 2;
-      grid-row: 1/-1;
-      margin-right: -10.4rem; 
-  }
+    .prob-proto-container .solution {
+        grid-column: 1;
+        margin-left: -4rem;
+        grid-row: 3;
+    }
+
+    .spork-prototype-container {
+        grid-column: 2;
+        grid-row: 1/-1;
+        margin-right: -8.8rem;
+    }
 
 
 
