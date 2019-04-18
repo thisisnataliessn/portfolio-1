@@ -557,7 +557,7 @@ footer a:hover {
 
 .flow-container {
     position: relative;
-    width: 100%;
+    /* display: grid; */
 }
 
 .flow-summary {
@@ -1065,7 +1065,8 @@ footer a:hover {
 }
 
 .three-personas {
-    margin-bottom: 2.4rem;
+    margin: 0 1.6rem 2.4rem 1.6rem;
+
 }
 
 .card {
@@ -1073,7 +1074,14 @@ footer a:hover {
     grid-template-rows: minmax(154px, 300px) auto;
     border-radius: 10px;
     max-width: 400px;
-    margin: 1.6rem auto;
+    margin: 3.2rem auto;
+    border-radius: 3rem;
+    grid-column: 2/8;
+    margin-top: 2.1rem;
+
+    border-bottom: solid .6rem var(--purple);
+    border-radius: 1rem;
+    background-color: white;
 }
 
 .card-img {
@@ -1128,30 +1136,49 @@ footer a:hover {
 }
 
 
-/* Old format of personas
-.three-personas h3 {
-    font-size: 2.4rem;
-    font-weight: 700;
-    
-    padding-top: 1.6rem;
+/*Spork comp analysis*/
+.spork-container .comp-analysis {
+    grid-column: 2/8;
 }
 
-.three-personas h5 {
-    font-size: 1.8rem;
-    padding-top: .8rem;
-    line-height: 1.5;
+.hide-mobile {
+    display: none;
 }
 
-.three-personas h6{
-    font-weight: 700;
-    font-size: 2.4rem;
-    padding-bottom: .8rem;
-    padding-top: 1.6rem;
+.comp-container {
+    display: grid;
+    grid-gap: 1.6rem;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1.6rem 4.8rem 1.6rem;
 }
 
-.three-personas img {
-    max-height: 20rem;
-} */
+.comp-logos {
+    justify-self: center;
+}
+
+
+
+.records {
+    display: grid;
+    grid-gap: 1.6rem;
+    justify-content: center;
+    padding: 0 1.6rem 4.8rem 1.6rem;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+/*Spork Info Archictecture*/
+
+
+
+
+.overlay {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    height: 540px;
+}
+
+
 
 /*Bio Page*/
 
@@ -1645,6 +1672,38 @@ form .button {
 
     }
 
+    /*Spork tablet*/
+    .comp-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+
+    /*order of hide-mobile and comp-logos is important! comp-logos is second*/
+    .hide-mobile {
+        display: block;
+        grid-row: 2;
+    }
+
+    .comp-logos {
+        grid-row: 1;
+    }
+
+    .bg,
+    .fs {
+        grid-column: 1;
+
+    }
+
+    .ps,
+    .soon {
+        grid-column: 2;
+
+
+    }
+
+
+
 }
 
 
@@ -1733,19 +1792,19 @@ form .button {
     .prob-proto-container .problem {
         grid-column: 1;
         grid-row: 1;
-        margin-left: -4rem;
+        /* margin-left: -10rem; */
     }
 
     .prob-proto-container .solution {
         grid-column: 1;
-        margin-left: -4rem;
+        /* margin-left: -4rem; */
         grid-row: 3;
     }
 
     .spork-prototype-container {
         grid-column: 2;
         grid-row: 1/-1;
-        margin-right: -8.8rem;
+        margin-right: -7.2rem;
     }
 
     .three-personas {
@@ -1753,12 +1812,14 @@ form .button {
         position: relative;
         display: grid;
         grid-template-columns: minmax(1.6rem, auto) repeat(6, minmax(auto, 20rem)) minmax(1.6rem, auto);
-        grid-gap: 1.6rem;        
+        grid-gap: 1.6rem;
+        margin-bottom: 4.8rem;
     }
 
     .card {
         margin: 0;
     }
+
     .three-personas .alex {
         grid-column: 2/4;
         justify-self: end;
@@ -1768,11 +1829,20 @@ form .button {
         grid-column: 4/6;
         justify-self: center;
     }
+
     .three-personas .fiona {
         grid-column: 6/8;
         justify-self: start;
     }
 
+    /*Spork comp analysis desktop*/
+
+    .records {
+        grid-template-columns: repeat(4, 1fr);
+        margin: 0 -16rem;
+
+
+    }
 
     /*Bio desktop*/
 
