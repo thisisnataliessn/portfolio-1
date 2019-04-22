@@ -557,7 +557,7 @@ footer a:hover {
 
 .flow-container {
     position: relative;
-
+    margin-top: 2.4rem;
 }
 
 .flow-summary {
@@ -933,7 +933,6 @@ footer a:hover {
     grid-column-gap: 16px;
     padding-bottom: 4rem;
     margin-top: 4.8rem;
-
 }
 
 .wireframes h2,
@@ -1169,7 +1168,30 @@ footer a:hover {
 /*Spork Info Archictecture*/
 
 
+.spork-flow-summary {
+    background-color: var(--light-green);
+    border-radius: 3rem;
+    margin: 1rem 2rem 0 2rem;
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
+    padding-top: .8rem;
+}
 
+.first-half-size {
+    grid-column: 2/8;    
+}
+
+.second-half-size {
+    grid-column: 2/8;
+    
+    align-self: center;
+}
+
+.sketch-2 {
+    grid-row: 5;
+}
+
+/* 
 .summary-text {
     background-color: var(--light-green);
     border-radius: 3rem;
@@ -1181,8 +1203,8 @@ footer a:hover {
 
 .background-img {
     background-size: cover;
-    margin-top:2.4rem;
-}
+    margin-top: 2.4rem;
+} */
 
 
 
@@ -1601,7 +1623,80 @@ form .button {
     }
 
     /*Spork case study tablet*/
-    .background-img {
+
+    .comp-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+
+    /*order of hide-mobile and comp-logos is important! comp-logos is second*/
+    .hide-mobile {
+        display: block;
+        grid-row: 2;
+    }
+
+    .comp-logos {
+        grid-row: 1;
+    }
+
+    .bg,
+    .fs {
+        grid-column: 1;
+
+    }
+
+    .ps,
+    .soon {
+        grid-column: 2;
+
+    }
+/*spork info arch tablet*/
+    .spork-container .flow-container {
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+    }
+
+    .spork-container .flow {
+        margin-left: -20rem;
+    }
+
+    .spork-container .flow::after {
+        content: "";
+        width: 100%;
+        height: auto;
+        background: rgba(0, 0, 0, .5);
+        z-index: 100;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .spork-flow-summary {
+        position: absolute;
+        top: 12rem;
+        max-width: 48rem;
+        right: -10rem;
+    }
+
+   
+  
+    .sketch-1 {
+        grid-row: 4;
+        grid-column: 1/6;
+        justify-self: end;
+        
+    }
+    
+    .sketch-2 {
+        grid-row: 4;
+        grid-column: 6/9;
+        
+    }
+
+   
+    /* .background-img {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
@@ -1629,7 +1724,7 @@ form .button {
 
 .overlay {
    background-color:rgba(0,0,0,.2)
-}
+} */
 
 
 
@@ -1701,35 +1796,6 @@ form .button {
 
     .comp-matrix {
         grid-column: 3/7;
-
-    }
-
-    /*Spork tablet*/
-    .comp-container {
-        grid-template-columns: 1fr 1fr;
-    }
-
-
-
-    /*order of hide-mobile and comp-logos is important! comp-logos is second*/
-    .hide-mobile {
-        display: block;
-        grid-row: 2;
-    }
-
-    .comp-logos {
-        grid-row: 1;
-    }
-
-    .bg,
-    .fs {
-        grid-column: 1;
-
-    }
-
-    .ps,
-    .soon {
-        grid-column: 2;
 
     }
 
@@ -1873,9 +1939,33 @@ form .button {
 
     /*Spork info arch desktop*/
 
+    .first-half-size {
+        grid-column: 1/5;
+        max-width: 55rem;
+        justify-self: end;
+        align-self: center;
+    }
+
+    .second-half-size {
+        grid-column: 5/9;
+        max-width: 55rem;
+        align-self: center;
+    }
+
+    .sketch-2 {
+        grid-row: 4;
+        max-height: 550px;
+        margin-right: 8.8rem;
+    }
+
+    .sketch-1 {
+        grid-row: 3;
+        justify-self: start;       
+        
+    }
+    
 
 
-    .flow
     /*Bio desktop*/
 
     .bio-title-section h1 {
