@@ -30,6 +30,18 @@ html {
     font-family: 'Source Sans Pro', Helvetica, sans-serif;
 }
 
+.blue {
+    background-color: var(--light-blue);
+}
+
+
+.gray {
+    background-color: var(--gray-white);
+}
+
+.orange {
+    background-color: var(--light-orange);
+}
 p {
     font-size: 1.8rem;
     line-height: 1.5;
@@ -586,12 +598,6 @@ footer a:hover {
     font-weight: 700;
 }
 
-
-
-
-
-
-
 .hifi-menu-img {
     max-width: 24rem;
 }
@@ -600,9 +606,11 @@ footer a:hover {
     max-width: 40rem;
 }
 
+
+
 .hi-fi-mocks {
     position: relative;
-    background-color: var(--gray-white);
+    
     margin-top: 0rem;
     padding-bottom: 4rem;
 
@@ -925,14 +933,13 @@ footer a:hover {
     border: 0;
 }
 
+
 .wireframes {
-    background-color: var(--light-blue);
     grid-column: 1/9;
     display: grid;
     grid-template-columns: minmax(1px, auto) repeat(6, minmax(30px, 100px)) minmax(1px, auto);
     grid-column-gap: 16px;
     padding-bottom: 4rem;
-    margin-top: 4.8rem;
 }
 
 .wireframes h2,
@@ -1182,13 +1189,29 @@ footer a:hover {
 }
 
 .second-half-size {
-    grid-column: 2/8;
-    
+    grid-column: 2/8;   
     align-self: center;
 }
 
-.sketch-2 {
-    grid-row: 5;
+.overlapping-imgs {
+    display: grid;
+    grid-column: 1/9;    
+    grid-template-columns: minmax(4rem, auto) repeat(6, minmax(30px, 100px)) minmax(4rem, auto);
+    grid-template-rows: 6rem auto;;
+}
+.under-img {
+    grid-column: 2/6;
+    grid-row:1;
+    max-height: 54rem;
+    justify-self:end;
+    margin-right: 3.2rem;
+}
+
+.over-img {
+    grid-column:4/8;
+    grid-row:2;
+    z-index: 1;
+    max-height: 60rem;
 }
 
 /* 
@@ -1680,22 +1703,40 @@ form .button {
         right: -10rem;
     }
 
-   
+ 
   
     .sketch-1 {
         grid-row: 4;
         grid-column: 1/6;
         justify-self: end;
-        
+        padding-left: 1.6rem;
     }
     
     .sketch-2 {
         grid-row: 4;
         grid-column: 6/9;
+        padding-right: 1.6rem;
         
     }
 
-   
+    .overlapping-imgs{
+        grid-template-rows: auto 6rem;
+        grid-gap: 2.4rem;
+        margin-bottom: -4rem;
+
+    }
+
+    .under-img {
+        grid-column: 1/5;
+        grid-row:1;       
+    }
+    
+    .over-img {
+        grid-column:5/9;
+        grid-row:1; 
+        max-height: 54rem;
+
+    }
     /* .background-img {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -1939,31 +1980,33 @@ form .button {
 
     /*Spork info arch desktop*/
 
+ 
+
     .first-half-size {
         grid-column: 1/5;
-        max-width: 55rem;
+        max-width: 50rem;
         justify-self: end;
         align-self: center;
     }
 
     .second-half-size {
         grid-column: 5/9;
-        max-width: 55rem;
+        max-width: 50rem;
         align-self: center;
     }
 
     .sketch-2 {
         grid-row: 4;
         max-height: 550px;
-        margin-right: 8.8rem;
+        margin-right: 8.8rem;        
     }
 
     .sketch-1 {
         grid-row: 3;
-        justify-self: start;       
-        
+        justify-self: start;          
     }
     
+
 
 
     /*Bio desktop*/
