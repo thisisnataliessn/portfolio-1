@@ -1248,8 +1248,7 @@ padding-bottom: 1.8rem;
 }
 
 .three-img-container img {
-    max-width: 24rem;
-    
+    max-width: 24rem; 
 }
 
 /*Bio Page*/
@@ -1786,7 +1785,9 @@ grid-column: 1;
 }
 
 .three-img-container {
-    grid-template-columns: 1fr 1fr 1r
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 -4rem;
+ 
 }
 
     /*Bio tablet*/
