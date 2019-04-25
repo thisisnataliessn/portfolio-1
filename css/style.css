@@ -1204,18 +1204,18 @@ footer a:hover {
     grid-template-columns: minmax(4rem, auto) repeat(6, minmax(30px, 100px)) minmax(4rem, auto);
     grid-template-rows: 6rem auto;;
     
-    
 }
 .under-img {
     grid-column: 2/6;
     grid-row:1;    
     justify-self:end;
+    
     }
 
 .over-img {
     grid-column:4/8;
     grid-row:2;
-    z-index: 1;    
+    z-index: 1;  
 }
 
 /*Spork Branding and Vis Design mobile*/
@@ -1232,8 +1232,17 @@ padding: 1.6rem 3.2rem;
 padding-bottom: 1.8rem;
 }
 
+.spork-container .wireframes-button {
+    margin-bottom: 10rem;
+}
+
+.spork-container .branding .section-separator-hr {
+    margin-top: 8rem;
+}
+
+
 .background-img {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("../images/spork/branding-brainstorm.png");
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("../images/spork/branding-brainstorm.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1254,6 +1263,12 @@ padding-bottom: 1.8rem;
 .two-image-container {
     display: grid;
    grid-gap: 1.6rem;
+}
+
+.spork-container .vis-design .button {
+    text-align: center;
+    margin: auto;
+    align-self: center;
 }
 
 /*Bio Page*/
@@ -1746,25 +1761,26 @@ form .button {
         
     }
 
-    .overlapping-imgs{
+    /* .overlapping-imgs{
         grid-template-rows: auto 6rem;
         grid-gap: 2.4rem;
         margin-bottom: -4rem;
 
-    }
+    }*/
 
     .under-img {
-        grid-column: 1/5;
-        grid-row:1;   
-        max-width: 30rem;    
+        grid-column: 1/6;
+        max-width:40rem;
+        margin-right: 4rem;
+
     }
     
     .over-img {
-        grid-column:5/9;
-        grid-row:1; 
-        max-width: 30rem;
-
-    }
+        grid-column:4/9;
+        max-width:40rem;
+        margin-left: 4rem;
+   
+    } 
 
     /*Spork vis design and branding tablet*/
     .img-text-wrapper {
@@ -1798,9 +1814,6 @@ grid-column: 1;
 
 }
 
-/* .three-img-container img {
-    max-width: none;
-} */
 
 .two-image-container {
     grid-template-columns: 1fr 1fr;
