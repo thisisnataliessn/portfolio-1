@@ -1251,6 +1251,11 @@ padding-bottom: 1.8rem;
     max-width: 24rem; 
 }
 
+.two-image-container {
+    display: grid;
+   grid-gap: 1.6rem;
+}
+
 /*Bio Page*/
 
 
@@ -1787,7 +1792,19 @@ grid-column: 1;
 .three-img-container {
     grid-template-columns: 1fr 1fr 1fr;
     margin: 0 -4rem;
- 
+    padding-bottom:2.4rem; 
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+
+}
+
+.two-image-container {
+    grid-template-columns: 1fr 1fr;
+    margin: 0 -4rem;
+    align-items: center;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+
 }
 
     /*Bio tablet*/
@@ -2028,7 +2045,10 @@ grid-column: 1;
     }
     
 
-
+.two-image-container {
+    grid-template-columns: 1fr 1fr;
+    margin: 0 -4rem;
+}
 
     /*Bio desktop*/
 
