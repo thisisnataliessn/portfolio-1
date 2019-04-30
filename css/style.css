@@ -1203,6 +1203,7 @@ footer a:hover {
     grid-column: 1/9;    
     grid-template-columns: minmax(4rem, auto) repeat(6, minmax(30px, 100px)) minmax(4rem, auto);
     grid-template-rows: 6rem auto;;
+    margin-bottom: 2.4rem;
     
 }
 .under-img {
@@ -1270,6 +1271,7 @@ padding-bottom: 1.8rem;
     margin: auto;
     align-self: center;
 }
+
 
 /*Bio Page*/
 
@@ -1717,16 +1719,14 @@ form .button {
       
 /*spork info arch tablet*/
     .spork-container .flow-container {
-        display: flex;
-        justify-content: space-around;
-        position: relative;
+                position: relative;
     }
 
     .spork-container .flow {
         margin-left: -20rem;
     }
 
-    .spork-container .flow::after {
+    /* .spork-container .flow::after {
         content: "";
         width: 100%;
         height: auto;
@@ -1735,7 +1735,7 @@ form .button {
         position: absolute;
         top: 0;
         left: 0;
-    }
+    } */
 
     .spork-flow-summary {
         position: absolute;
