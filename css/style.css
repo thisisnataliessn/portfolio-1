@@ -147,7 +147,7 @@ p b {
 .scroll-indicator {
     position: fixed;
     top: 100px;
-    z-index: 5;
+    z-index: 6;
     width: 100%;
     background-color: var(--gray-white);
 }
@@ -161,6 +161,7 @@ p b {
 .progress-bar {
     height: 6px;
     background: var(--purple);
+
 }
 
 main {
@@ -313,7 +314,7 @@ nav {
     align-items: center;
     padding: 1.6rem;
     top: 0;
-    z-index: 5;
+    z-index: 6;
 }
 
 nav ul {
