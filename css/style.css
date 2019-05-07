@@ -189,7 +189,6 @@ main {
 }
 
 .project {
-    background-color: var(--light-blue);
     grid-row: 2 / span 1;
     grid-column: 1 /span 8;
     padding-left: 16px;
@@ -297,9 +296,7 @@ main {
     color: var(--black);
 }
 
-.project-2 {
-    background-color: var(--gray-white);
-}
+
 
 
 
@@ -1016,6 +1013,10 @@ footer a:hover {
     display: grid;
     grid-template-columns: repeat(11, 1fr);
     align-items: center;
+   
+}
+
+.spork-container .screenshot-group {
     padding-bottom: 42px;
 }
 
@@ -1275,12 +1276,11 @@ footer a:hover {
     align-self: center;
 }
 
-/* .spork-container a{
-    position: relative;
-} */
 
-.spork-container a:hover::before {
-    height: .8rem;
+
+.conc-p a:hover::before {
+    height: .6rem;
+    z-index: 2;
 }
 
 /*Bio Page*/
@@ -1588,12 +1588,7 @@ form .button {
 
     .project-1 a {
         grid-column: 2;
-
-    }
-
-    .project-2 a {
-        grid-column: 3;
-
+        align-self: center;
     }
 
     .project-2 .project-info {
@@ -1601,6 +1596,12 @@ form .button {
         grid-row: 1;
     }
 
+    .project-2 a {
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+    
 
     .project h1 {
         padding-top: 0;
